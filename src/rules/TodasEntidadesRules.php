@@ -484,35 +484,6 @@ trait TodasEntidadesRules {
     }
     
     /**
-     * Dotação aberta por superávit
-     */
-    public function testCreditoAbertoPorSuperavitFinanceiro() {
-        $filter = function (array $line): bool {
-            if (
-                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.01') && $line['escrituracao'] === 'S'
-            ) {
-                return true;
-            }
-            return false;
-        };
-        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
-        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
-
-        $filter = function (array $line): bool {
-            if (
-                    $line['origem_recurso'] == 1
-            ) {
-                return true;
-            }
-            return false;
-        };
-        $decreto = $this->somaColuna($this->getDataFrame('DECRETO'), 'valor_credito_adicional', $filter);
-
-        
-        $this->comparar(($saldoDevedor - $saldoCredor), $decreto);
-    }
-    
-    /**
      * Emissão de notas de empenho
      */
     public function testEmissaoDeNotasDeEmpenhosContabilizada() {
@@ -1217,6 +1188,32 @@ trait TodasEntidadesRules {
     }
     
     /**
+     * Fechamento 7.1.1.9.1.01/8.1.1.9.1.01
+     */
+    public function testFechamentoDosNiveisDasContasDeControleDePlanoDeAmortizacaoDoDeficitAtuarial() {
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '7.1.1.9.1.01') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor7 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor7 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '8.1.1.9.1.01') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor8 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor8 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
+        
+        $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+    }
+    
+    /**
      * Fechamento 7.1.1.9.1.05/8.1.1.9.1.05
      */
     public function testFechamentoDosNiveisDasContasDeControleDeAtivosContingentes() {
@@ -1609,7 +1606,7 @@ trait TodasEntidadesRules {
     /**
      * Fechamento 7.9.2.6/8.9.2.6
      */
-    public function testFechamentoDosNiveisDasContasDeControleDePagamentosSemREspaldoOrcamentario() {
+    public function testFechamentoDosNiveisDasContasDeControleDePagamentosSemRespaldoOrcamentario() {
         $filter = function (array $line): bool {
             if (str_starts_with($line['conta_contabil'], '7.9.2.6') && $line['escrituracao'] === 'S') {
                 return true;
@@ -1734,5 +1731,93 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+    }
+    
+    /**
+     * Obrigações patronais ao RPPS
+     */
+    public function testSaldoFinalDeContribuicaoAoRppsIgualAoSaldoLiquidadoAPagar() {
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '2.1.1.4.2.01.02') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['rubrica'], '3.1.91.13')) {
+                return true;
+            }
+            return false;
+        };
+        $liquidado = $this->somaColuna($this->getDataFrame('LIQUIDACAO'), 'valor_liquidacao', $filter);
+        $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
+
+        $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+    }
+    
+    /**
+     * Obrigações patronais ao RGPS
+     */
+    public function testSaldoFinalDeContribuicaoAoRgpsIgualAoSaldoLiquidadoAPagar() {
+        $filter = function (array $line): bool {
+            if (
+                    (
+                        str_starts_with($line['conta_contabil'], '2.1.1.4.3.01.01.02')
+                        || str_starts_with($line['conta_contabil'], '2.1.1.4.3.01.03.02')
+                    )
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['rubrica'], '3.1.90.04.15.01')
+                    || str_starts_with($line['rubrica'], '3.1.90.13.02')
+                    || str_starts_with($line['rubrica'], '3.3.90.47.20')
+                ) {
+                return true;
+            }
+            return false;
+        };
+        $liquidado = $this->somaColuna($this->getDataFrame('LIQUIDACAO'), 'valor_liquidacao', $filter);
+        $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
+
+        $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+    }
+    
+    /**
+     * Obrigações patronais ao FGTS
+     */
+    public function testSaldoFinalDeContribuicaoAoFgtsIgualAoSaldoLiquidadoAPagar() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '2.1.1.4.3.05.02')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['rubrica'], '3.1.90.13.01')
+                ) {
+                return true;
+            }
+            return false;
+        };
+        $liquidado = $this->somaColuna($this->getDataFrame('LIQUIDACAO'), 'valor_liquidacao', $filter);
+        $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
+
+        $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
     }
 }

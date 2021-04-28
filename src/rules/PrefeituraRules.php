@@ -94,5 +94,33 @@ trait PrefeituraRules {
 
         $this->comparar(($saldoCredorPassivo - $saldoDevedorPassivo), ($saldoCredorControle - $saldoDevedorControle));
     }
+    
+    /**
+     * Dotação aberta por superávit
+     */
+    public function testCreditoAbertoPorSuperavitFinanceiro() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.01') && $line['escrituracao'] === 'S'
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
+        $filter = function (array $line): bool {
+            if (
+                    $line['origem_recurso'] == 1
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $decreto = $this->somaColuna($this->getDataFrame('DECRETO'), 'valor_credito_adicional', $filter);
+
+        
+        $this->comparar(($saldoDevedor - $saldoCredor), $decreto);
+    }
 }
