@@ -1,0 +1,19 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "php-tool-kit/df": "dev-main",
+        "php-tool-kit/fs": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "IDDRS\\ContTest\\Rules\\": "src/rules",
+            "IDDRS\\ContTest\\Base\\": "src/base",
+            "IDDRS\\ContTest\\Tests\\": "tests",
+            "IDDRS\\ContTest\\Config\\": "config"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors --testdox --bootstrap vendor/autoload.php"
+    }
+}
