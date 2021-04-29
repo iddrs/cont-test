@@ -2236,4 +2236,30 @@ trait TodasEntidadesRules {
 
         $this->comparar(($saldoCredor - $saldoDevedor), ($saldoCredorRP - $saldoDevedorRP));
     }
+    
+    public function testImobilizadoTestadoManualmente() {
+        $this->assertTrue(true);
+    }
+    
+    public function testSuprimentosDeFundosIndividualmenteTestadosManualmente() {
+        $this->assertTrue(true);
+    }
+    
+    public function testDisponibilidadesTestadasManualmente() {
+        $this->assertTrue(true);
+    }
+    
+    public function testSaldosInvertidosTestadosManualmente() {
+        $this->assertTrue(true);
+    }
+    
+    public function testContasPatrimoniaisComIndicadorDeSuperavitFinanceiroIgualXTestadasManualmente() {
+        $this->assertTrue(true);
+    }
+    
+    public function testFechamentoDasFontesDeRecursosTestadoManualmente() {
+        $this->assertTrue(true);
+    }
+    
+    
 }

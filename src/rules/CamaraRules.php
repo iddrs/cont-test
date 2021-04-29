@@ -9,6 +9,8 @@ namespace IDDRS\ContTest\Rules;
  */
 trait CamaraRules {
 
-    
+    public function testExistenciaDeReceitaOrcamentariaNaCamaraTestadaManualmente() {
+        $this->assertTrue(true);
+    }
 
 }
