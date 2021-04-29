@@ -64,5 +64,5 @@ trait TestBase {
     protected function comparar($valor1, $valor2): void {
         $this->assertEquals(round($valor1, 2), round($valor2, 2));
     }
-
+    
 }

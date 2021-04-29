@@ -14,6 +14,6 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit --colors --testdox --bootstrap vendor/autoload.php"
+        "test": "vendor/bin/phpunit --colors --testdox --bootstrap vendor/autoload.php --verbose"
     }
 }

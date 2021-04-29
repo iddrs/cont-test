@@ -1820,4 +1820,420 @@ trait TodasEntidadesRules {
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
     }
+    
+    /**
+     * Testa os restos a pagar não processados inscritos no ano
+     */
+    public function testRestosAPagarNaoProcessadosInscritosNoExercicio() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.1.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.2.2.9.2.01.01')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorAnt = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_debito', $filter);
+        $saldoCredorAnt = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
+        
+        $this->comparar(($saldoCredorAnt - $saldoDevedorAnt), ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    /**
+     * Testa os restos a pagar processados inscritos no ano
+     */
+    public function testRestosAPagarProcessadosInscritosNoExercicio() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.2.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.2.2.9.2.01.03')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorAnt = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_debito', $filter);
+        $saldoCredorAnt = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
+        
+        $this->comparar(($saldoCredorAnt - $saldoDevedorAnt), ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    /**
+     * Saldo inicial de RPNP
+     */
+    public function testRestosAPagarNaoProcessadosInscritos() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_inicial_nao_processados', $filter);
+        
+        $this->comparar($saldoRP, ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    /**
+     * Saldo inicial de RPP
+     */
+    public function testRestosAPagarProcessadosInscritos() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.2')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_inicial_processados', $filter);
+        
+        $this->comparar($saldoRP, ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    /**
+     * saldo de rpnp inscricao no exercicio igual a zero
+     */
+    public function testRestosAPagarNaoProcessadosInscricaoNoExercicioIgualAZero() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.1.7')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(0, ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    /**
+     * saldo de rpp inscricao no exercicio igual a zero
+     */
+    public function testRestosAPagarProcessadosInscricaoNoExercicioIgualAZero() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.2.7')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(0, ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosInscricaoNoExercicioIgualEmpenhadoNaoLiquidado() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.1.7')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.2.2.1.3.01')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(($saldoCredor - $saldoDevedor), ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    public function testRestosAPagarProcessadosInscricaoNoExercicioIgualLiquidadoNaoPago() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.3.2.7')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.2.2.1.3.03')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(($saldoCredor - $saldoDevedor), ($saldoDevedorRP - $saldoCredorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosALiquidar() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.1.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_final_nao_processados', $filter);
+        
+        $this->comparar($saldoRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosAPagar() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.1.3')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $liquidadosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_liquidados', $filter);
+        $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_pagos', $filter);
+        
+        $this->comparar($liquidadosRP - $pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosPagos() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.1.4')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_pagos', $filter);
+        
+        $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosALiquidarInscricaoNoExercicioIgualAZero() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.1.7.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(0, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosALiquidarInscricaoNoExercicioIgualEmpenhadoNaoLiquidado() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.1.7.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.2.2.1.3.01')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(($saldoCredor - $saldoDevedor), ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarNaoProcessadosCancelados() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.1.9')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_cancelados', $filter);
+        
+        $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarProcessadosAPagar() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.2.1')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $liquidadosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_inicial_processados', $filter);
+        $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'processados_pagos', $filter);
+        
+        $this->comparar($liquidadosRP - $pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarProcessadosPagos() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.2.2')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'processados_pagos', $filter);
+        
+        $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarProcessadosCancelados() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.2.9')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'processados_cancelados', $filter);
+        
+        $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarProcessadosALiquidarInscricaoNoExercicioIgualAZero() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.2.7')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(0, ($saldoCredorRP - $saldoDevedorRP));
+    }
+    
+    public function testRestosAPagarProcessadosALiquidarInscricaoNoExercicioIgualEmpenhadoNaoLiquidado() {
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.3.2.7')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_debito', $filter);
+        $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_anterior_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '6.2.2.1.3.03')
+                    && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
+
+        $this->comparar(($saldoCredor - $saldoDevedor), ($saldoCredorRP - $saldoDevedorRP));
+    }
 }
