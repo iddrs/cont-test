@@ -31,6 +31,8 @@ trait EntidadesComReceitaRules {
         $receitaOrcada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_orcada', $filter);
         
         $this->comparar(($saldoDevedor - $saldoCredor), $receitaOrcada);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.1.1.1');
     }
     
     /**
@@ -59,6 +61,8 @@ trait EntidadesComReceitaRules {
         $receitaOrcada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_orcada', $filter);
         
         $this->comparar(($saldoDevedor - $saldoCredor), $receitaOrcada);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.1.1.2.01.01');
     }
     
     /**
@@ -87,6 +91,8 @@ trait EntidadesComReceitaRules {
         $receitaOrcada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_orcada', $filter);
         
         $this->comparar(($saldoDevedor - $saldoCredor), $receitaOrcada);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.1.1.2.99');
     }
     
     /**
@@ -114,6 +120,8 @@ trait EntidadesComReceitaRules {
         $previsaoAtualizada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'previsao_atualizada', $filter);
         
         $this->comparar(($saldoDevedor - $saldoCredor), ($previsaoAtualizada - $receitaOrcada));
+        
+        $this->saldoVerificado(__METHOD__, '5.2.1.2.1.01');
     }
     
     /**
@@ -142,6 +150,8 @@ trait EntidadesComReceitaRules {
         $previsaoAtualizada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'previsao_atualizada', $filter);
         
         $this->comparar(($saldoDevedor - $saldoCredor), ($previsaoAtualizada - $receitaOrcada));
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.3.02');
+        
     }
     
     /**
@@ -167,6 +177,8 @@ trait EntidadesComReceitaRules {
         $receitaArrecadada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_realizada', $filter);
         
         $this->comparar(($saldoCredor - $saldoDevedor), ($previsaoAtualizada - $receitaArrecadada));
+        
+        $this->saldoVerificado(__METHOD__, '6.2.1.1');
     }
     
     /**
@@ -191,6 +203,8 @@ trait EntidadesComReceitaRules {
         $receitaArrecadada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_realizada', $filter);
         
         $this->comparar(($saldoCredor - $saldoDevedor), $receitaArrecadada);
+        
+        $this->saldoVerificado(__METHOD__, '6.2.1.2');
     }
     
     /**
@@ -219,6 +233,8 @@ trait EntidadesComReceitaRules {
         $receitaArrecadada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_realizada', $filter);
         
         $this->comparar(($saldoCredor - $saldoDevedor), $receitaArrecadada);
+        
+        $this->saldoVerificado(__METHOD__, '6.2.1.3.1.01');
     }
     
     /**
@@ -250,6 +266,8 @@ trait EntidadesComReceitaRules {
         $receitaArrecadada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_realizada', $filter) * -1;
         
         $this->comparar(($saldoDevedor - $saldoCredor), $receitaArrecadada);
+        
+        $this->saldoVerificado(__METHOD__, '6.2.1.3.2');
     }
     
     /**
@@ -282,6 +300,8 @@ trait EntidadesComReceitaRules {
         $receitaArrecadada = $this->somaColuna($this->getDataFrame('BAL_REC'), 'receita_realizada', $filter) * -1;
         
         $this->comparar(($saldoDevedor - $saldoCredor), $receitaArrecadada);
+        
+        $this->saldoVerificado(__METHOD__, '6.2.1.3.9');
     }
     
     /**
@@ -308,5 +328,7 @@ trait EntidadesComReceitaRules {
         
         
         $this->comparar(($saldoDevedor5 - $saldoCredor5), ($saldoCredor6 - $saldoDevedor6));
+        
+        $this->saldoVerificado(__METHOD__, '5.2.1', '6.2.1');
     }
 }

@@ -42,6 +42,7 @@ trait ConsolidadoRules {
         $despesa = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_pago', $filter);
 
         $this->comparar($receita, $despesa);
+        
     }
     
     /**
@@ -74,6 +75,8 @@ trait ConsolidadoRules {
             ($ativoDebito - $ativoCredito),
             ($passivoCredito - $passivoDebito)
         );
+        
+        $this->saldoVerificado(__METHOD__, '1.1.2.1.2.71.01', '2.1.1.4.2.01.01');
     }
     
     /**
@@ -106,6 +109,8 @@ trait ConsolidadoRules {
             ($ativoDebito - $ativoCredito),
             ($passivoCredito - $passivoDebito)
         );
+        
+        $this->saldoVerificado(__METHOD__, '1.2.1.1.2.06.04.01', '2.2.1.4.2.01');
     }
     
     /**
@@ -138,6 +143,8 @@ trait ConsolidadoRules {
             ($ativoDebito - $ativoCredito),
             ($passivoCredito - $passivoDebito)
         );
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.8.2.99.01', '2.1.8.9.2.02');
     }
     
     /**
@@ -170,6 +177,7 @@ trait ConsolidadoRules {
             ($ativoDebito - $ativoCredito),
             ($passivoCredito - $passivoDebito)
         );
+        
     }
     
     /**
@@ -239,6 +247,8 @@ trait ConsolidadoRules {
             ($ativoDebito - $ativoCredito),
             ($liquidado - $pago)
         );
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.6.2.01.01.01');
     }
     
     /**
@@ -276,6 +286,8 @@ trait ConsolidadoRules {
             ($ativoDebito - $ativoCredito),
             ($liquidado - $pago)
         );
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.6.2.01.01.02');
     }
     
     /**
@@ -308,6 +320,8 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.6.2.01.02', '2.1.8.8.2.01.01.01');
     }
     
     /**
@@ -340,6 +354,8 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '3.1.2.1.2.01', '4.2.1.1.2.01');
     }
     
     /**
@@ -372,6 +388,8 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '3.1.2.1.2.99', '4.2.1.1.2.03');
     }
     
     /**
@@ -404,6 +422,8 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '3.4.3.9.2.01', '4.4.3.9.2.01');
     }
     
     /**
@@ -436,6 +456,8 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '3.5.1.1.2.02', '4.5.1.1.2.02');
     }
     
     /**
@@ -468,6 +490,8 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '3.6.5.1.2.03', '4.6.4.1.2.03');
     }
     
     /**
@@ -500,5 +524,7 @@ trait ConsolidadoRules {
             ($ativoDebito1 - $ativoCredito1),
             ($ativoCredito2 - $ativoDebito2)
         );
+        
+        $this->saldoVerificado(__METHOD__, '3.9.9.9.2.01', '4.9.9.9.2.01');
     }
 }

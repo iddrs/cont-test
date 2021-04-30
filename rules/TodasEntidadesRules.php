@@ -21,7 +21,10 @@ trait TodasEntidadesRules {
         };
         $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
         $this->comparar(0.0, ($saldoDevedor - $saldoCredor));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.1.1.01.01');
     }
 
     /**
@@ -36,7 +39,10 @@ trait TodasEntidadesRules {
         };
         $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
         $this->comparar(0.0, ($saldoDevedor - $saldoCredor));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.1.1.01.04');
     }
 
     /**
@@ -51,7 +57,10 @@ trait TodasEntidadesRules {
         };
         $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
         $this->comparar(0.0, ($saldoDevedor - $saldoCredor));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.1.1.01.99');
     }
 
     /**
@@ -86,6 +95,8 @@ trait TodasEntidadesRules {
         $saldoCredorAAprovar = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filterAAprovar);
 
         $this->comparar(($saldoDevedorAtivo - $saldoCredorAtivo), (($saldoCredorAComprovar - $saldoDevedorAComprovar) + ($saldoCredorAAprovar - $saldoDevedorAAprovar)));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.3.1.1.02', '8.9.1.2.1.01', '8.9.1.2.1.02');
     }
 
     /**
@@ -120,6 +131,8 @@ trait TodasEntidadesRules {
         $saldoCredorAAprovar = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filterAAprovar);
 
         $this->comparar(($saldoDevedorAtivo - $saldoCredorAtivo), (($saldoCredorAComprovar - $saldoDevedorAComprovar) + ($saldoCredorAAprovar - $saldoDevedorAAprovar)));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.9.8.1.01', '8.1.22.1.01.02', '8.1.2.2.1.01.03');
     }
 
     /**
@@ -147,6 +160,8 @@ trait TodasEntidadesRules {
         $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.1.1.1.01.01.02');
     }
 
     /**
@@ -174,6 +189,8 @@ trait TodasEntidadesRules {
         $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.1.1.1.01.03.02');
     }
 
     /**
@@ -201,6 +218,8 @@ trait TodasEntidadesRules {
         $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.4.1.3.11.02');
     }
 
     /**
@@ -244,6 +263,7 @@ trait TodasEntidadesRules {
         $saldoCredorPassivo = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
         $this->comparar(($saldoDevedorDisp - $saldoCredorDisp), ($saldoCredorPassivo - $saldoDevedorPassivo) - ($saldoDevedorAtivo - $saldoCredorAtivo));
+        
     }
 
     /**
@@ -295,6 +315,8 @@ trait TodasEntidadesRules {
         $creditosVPA = $this->somaColuna($this->getDataFrame('BAL_VER'), 'movimentacao_credito', $filter);
 
         $this->comparar(($debitosAtivo + $debitosPassivo + $debitosVPA + $debitosVPD), ($creditosAtivo + $creditosPassivo + $creditosVPA + $creditosVPD));
+        
+        $this->naturezaVerificada(__METHOD__, '1.', '2.', '3.', '4.');
     }
 
     /**
@@ -319,6 +341,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.1.01');
     }
 
     /**
@@ -343,6 +367,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.2.01');
     }
 
     /**
@@ -367,6 +393,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.2.02');
     }
 
     /**
@@ -391,6 +419,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.2.03');
     }
 
     /**
@@ -432,6 +462,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoDevedor1 - $saldoCredor1), ($saldoDevedor2 - $saldoCredor2));
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.2.02.02', '5.2.2.1.2.03.02', '5.2.2.1.3.06');
     }
     
     /**
@@ -454,8 +486,9 @@ trait TodasEntidadesRules {
         };
         $balDesp = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'reducao_dotacao', $filter);
 
-        
         $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.3.03');
     }
     
     
@@ -481,6 +514,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoCredor - $saldoDevedor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.9.04');
     }
     
     /**
@@ -505,6 +540,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.9.2.01');
     }
     
     /**
@@ -537,6 +574,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoCredor - $saldoDevedor), (($dotacaoInicial + $suplementar + $especial + $extraordinario - $reducao + $suplementacaoRV - $reducaoRV) - $empenhado));
+        
+        $this->saldoVerificado(__METHOD__, '6.2.2.1.1');
     }
     
     /**
@@ -562,6 +601,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoCredor - $saldoDevedor), ($empenhado - $liquidado));
+        $this->saldoVerificado(__METHOD__, '6.2.2.1.3.01');
+        
     }
     
     /**
@@ -587,6 +628,8 @@ trait TodasEntidadesRules {
 
         
         $this->comparar(($saldoCredor - $saldoDevedor), ($liquidado - $pago));
+        
+        $this->saldoVerificado(__METHOD__, '6.2.2.1.3.03');
     }
     
     /**
@@ -609,8 +652,9 @@ trait TodasEntidadesRules {
         };
         $pago = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_pago', $filter);
 
-        
         $this->comparar(($saldoCredor - $saldoDevedor), $pago);
+        
+        $this->saldoVerificado(__METHOD__, '6.2.2.1.3.04');
     }
     
     /**
@@ -633,9 +677,10 @@ trait TodasEntidadesRules {
         };
         $empenhado = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_empenhado', $filter);
         $liquidado = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_liquidado', $filter);
-
         
         $this->comparar(($saldoCredor - $saldoDevedor), ($empenhado - $liquidado));
+        
+        $this->saldoVerificado(__METHOD__, '6.2.2.9.2.01.01');
     }
     
     /**
@@ -659,8 +704,9 @@ trait TodasEntidadesRules {
         $liquidado = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_liquidado', $filter);
         $pago = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_pago', $filter);
 
-        
         $this->comparar(($saldoCredor - $saldoDevedor), ($liquidado - $pago));
+        
+        $this->saldoVerificado(__METHOD__, '6.2.2.9.2.01.03');
     }
     
     /**
@@ -682,9 +728,10 @@ trait TodasEntidadesRules {
             return true;
         };
         $pago = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'valor_pago', $filter);
-
         
         $this->comparar(($saldoCredor - $saldoDevedor), $pago);
+        
+        $this->saldoVerificado(__METHOD__, '6.2.2.9.2.01.04');
     }
     
     /**
@@ -714,6 +761,8 @@ trait TodasEntidadesRules {
         $creditosCEPO = $this->somaColuna($this->getDataFrame('BAL_VER'), 'movimentacao_credito', $filter);
 
         $this->comparar(($debitosCAPO + $debitosCEPO), ($creditosCAPO + $creditosCEPO));
+        
+        $this->naturezaVerificada(__METHOD__, '5.', '6.');
     }
     
     /**
@@ -740,6 +789,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor5 - $saldoCredor5), ($saldoCredor6 - $saldoDevedor6));
+        
+        $this->nivelVerificado(__METHOD__, '5.2.2.1', '6.2.2.1');
     }
     
     /**
@@ -766,6 +817,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor5 - $saldoCredor5), ($saldoCredor6 - $saldoDevedor6));
+        
+        $this->nivelVerificado(__METHOD__, '5.2.2.9', '6.2.2.9');
     }
     
     /**
@@ -792,6 +845,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor5 - $saldoCredor5), ($saldoCredor6 - $saldoDevedor6));
+        
+        $this->nivelVerificado(__METHOD__, '5.3.1', '6.3.1');
     }
     
     /**
@@ -818,6 +873,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor5 - $saldoCredor5), ($saldoCredor6 - $saldoDevedor6));
+        
+        $this->nivelVerificado(__METHOD__, '5.3.2', '6.3.2');
     }
     
     /**
@@ -907,6 +964,8 @@ trait TodasEntidadesRules {
                     - ($saldoCredorRPNP - $saldoDevedorRPNP)
                 )
             );
+        
+        $this->saldoVerificado(__METHOD__, '8.2.1.1.1');
     }
     
     /**
@@ -953,6 +1012,8 @@ trait TodasEntidadesRules {
                     + ($saldoCredorRPNP - $saldoDevedorRPNP)
                 )
             );
+        
+        $this->saldoVerificado(__METHOD__, '8.2.1.1.2');
     }
     
     /**
@@ -1014,6 +1075,8 @@ trait TodasEntidadesRules {
                     - ($saldoDevedor1 - $saldoCredor1)
                 )
             );
+        
+        $this->saldoVerificado(__METHOD__, '8.2.1.1.3');
     }
     
     /**
@@ -1044,6 +1107,8 @@ trait TodasEntidadesRules {
                 ($saldoCredorControle - $saldoDevedorControle),
                 $pago
             );
+        
+        $this->saldoVerificado(__METHOD__, '8.5.3.1.0.01');
     }
     
     /**
@@ -1074,6 +1139,8 @@ trait TodasEntidadesRules {
                 ($saldoCredorControle - $saldoDevedorControle),
                 $pago
             );
+        
+        $this->saldoVerificado(__METHOD__, '8.5.3.1.0.02');
     }
     
     /**
@@ -1104,6 +1171,8 @@ trait TodasEntidadesRules {
                 ($saldoCredorControle - $saldoDevedorControle),
                 $pago
             );
+        
+        $this->saldoVerificado(__METHOD__, '8.5.3.1.0.03');
     }
     
     /**
@@ -1133,6 +1202,8 @@ trait TodasEntidadesRules {
         $creditosCC = $this->somaColuna($this->getDataFrame('BAL_VER'), 'movimentacao_credito', $filter);
 
         $this->comparar(($debitosCD + $debitosCC), ($creditosCD + $creditosCC));
+        
+        $this->naturezaVerificada(__METHOD__, '7.', '8.');
     }
     
     /**
@@ -1159,6 +1230,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.1.3.1.03', '8.1.1.3.1.03');
     }
     
     /**
@@ -1185,6 +1258,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.1.9.1.04', '8.1.1.9.1.04');
     }
     
     /**
@@ -1211,6 +1286,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.1.9.1.01', '8.1.1.9.1.01');
     }
     
     /**
@@ -1237,6 +1314,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.1.9.1.05', '8.1.1.9.1.05');
     }
     
     /**
@@ -1263,6 +1342,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.2.2.1.01', '8.1.2.2.1.01');
     }
     
     /**
@@ -1289,6 +1370,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        $this->nivelVerificado(__METHOD__, '7.1.2.3.1.02', '8.1.2.3.1.02');
+        
     }
     
     /**
@@ -1315,6 +1398,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.2.3.1.04', '8.1.2.3.1.04');
     }
     
     /**
@@ -1341,6 +1426,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.2.3.1.99', '8.1.2.3.1.99');
     }
     
     /**
@@ -1367,6 +1454,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.2.9.1.01', '8.1.2.9.1.01');
     }
     
     /**
@@ -1393,6 +1482,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.2.9.1.02', '8.1.2.29.1.02');
     }
     
     /**
@@ -1419,6 +1510,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.2.1.1', '8.2.1.1');
     }
     
     /**
@@ -1445,6 +1538,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.4.1.1.1', '8.4.1.1.1');
     }
     
     /**
@@ -1471,6 +1566,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.4.1.1.2', '8.4.1.1.2');
     }
     
     /**
@@ -1497,6 +1594,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.4.1.1.9', '8.4.1.1.9');
     }
     
     /**
@@ -1523,6 +1622,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.5.3.1', '8.5.3.1');
     }
     
     /**
@@ -1549,6 +1650,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.5.3.2', '8.5.3.2');
     }
     
     /**
@@ -1575,6 +1678,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.1.1.3', '8.9.1.1.3');
     }
     
     /**
@@ -1601,6 +1706,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.1.2.1', '8.9.1.2.1');
     }
     
     /**
@@ -1627,6 +1734,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.2.6', '8.9.2.6');
     }
     
     /**
@@ -1653,6 +1762,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.2.9', '8.9.2.9');
     }
     
     /**
@@ -1679,6 +1790,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.9.9.1', '8.9.9.9.1');
     }
     
     /**
@@ -1705,6 +1818,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.9.9.2', '8.9.9.9.2');
     }
     
     /**
@@ -1731,6 +1846,8 @@ trait TodasEntidadesRules {
         
         
         $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.9.9.9.4', '8.9.9.9.4');
     }
     
     /**
@@ -1756,6 +1873,8 @@ trait TodasEntidadesRules {
         $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.1.4.2.01.02');
     }
     
     /**
@@ -1790,6 +1909,8 @@ trait TodasEntidadesRules {
         $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.1.4.3.01.01.02', '2.1.1.4.3.01.03.02');
     }
     
     /**
@@ -1819,6 +1940,8 @@ trait TodasEntidadesRules {
         $pago = $this->somaColuna($this->getDataFrame('PAGAMENTO'), 'valor_pagamento', $filter);
 
         $this->comparar(($liquidado - $pago), ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.1.4.3.05.02');
     }
     
     /**
@@ -1848,6 +1971,8 @@ trait TodasEntidadesRules {
         $saldoCredorAnt = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
         
         $this->comparar(($saldoCredorAnt - $saldoDevedorAnt), ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.1.1');
     }
     
     /**
@@ -1877,6 +2002,9 @@ trait TodasEntidadesRules {
         $saldoCredorAnt = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
         
         $this->comparar(($saldoCredorAnt - $saldoDevedorAnt), ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.2.1');
+        
     }
     
     /**
@@ -1900,6 +2028,8 @@ trait TodasEntidadesRules {
         $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_inicial_nao_processados', $filter);
         
         $this->comparar($saldoRP, ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.1');
     }
     
     /**
@@ -1923,6 +2053,8 @@ trait TodasEntidadesRules {
         $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_inicial_processados', $filter);
         
         $this->comparar($saldoRP, ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.2');
     }
     
     /**
@@ -1941,6 +2073,8 @@ trait TodasEntidadesRules {
         $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
         $this->comparar(0, ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.1.7');
     }
     
     /**
@@ -1959,6 +2093,8 @@ trait TodasEntidadesRules {
         $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
         $this->comparar(0, ($saldoDevedorRP - $saldoCredorRP));
+        $this->saldoVerificado(__METHOD__, '5.3.2.7');
+        
     }
     
     public function testRestosAPagarNaoProcessadosInscricaoNoExercicioIgualEmpenhadoNaoLiquidado() {
@@ -1985,6 +2121,8 @@ trait TodasEntidadesRules {
         $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
 
         $this->comparar(($saldoCredor - $saldoDevedor), ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.1.7');
     }
     
     public function testRestosAPagarProcessadosInscricaoNoExercicioIgualLiquidadoNaoPago() {
@@ -2011,6 +2149,8 @@ trait TodasEntidadesRules {
         $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
 
         $this->comparar(($saldoCredor - $saldoDevedor), ($saldoDevedorRP - $saldoCredorRP));
+        
+        $this->saldoVerificado(__METHOD__, '5.3.2.7');
     }
     
     public function testRestosAPagarNaoProcessadosALiquidar() {
@@ -2031,6 +2171,8 @@ trait TodasEntidadesRules {
         $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_final_nao_processados', $filter);
         
         $this->comparar($saldoRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.1.1');
     }
     
     public function testRestosAPagarNaoProcessadosAPagar() {
@@ -2052,6 +2194,8 @@ trait TodasEntidadesRules {
         $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_pagos', $filter);
         
         $this->comparar($liquidadosRP - $pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.1.3');
     }
     
     public function testRestosAPagarNaoProcessadosPagos() {
@@ -2072,6 +2216,8 @@ trait TodasEntidadesRules {
         $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_pagos', $filter);
         
         $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.1.4');
     }
     
     public function testRestosAPagarNaoProcessadosALiquidarInscricaoNoExercicioIgualAZero() {
@@ -2087,6 +2233,8 @@ trait TodasEntidadesRules {
         $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
         $this->comparar(0, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.1.7.1');
     }
     
     public function testRestosAPagarNaoProcessadosALiquidarInscricaoNoExercicioIgualEmpenhadoNaoLiquidado() {
@@ -2113,6 +2261,8 @@ trait TodasEntidadesRules {
         $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
 
         $this->comparar(($saldoCredor - $saldoDevedor), ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.1.7.1');
     }
     
     public function testRestosAPagarNaoProcessadosCancelados() {
@@ -2133,6 +2283,8 @@ trait TodasEntidadesRules {
         $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'nao_processados_cancelados', $filter);
         
         $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.1.9');
     }
     
     public function testRestosAPagarProcessadosAPagar() {
@@ -2154,6 +2306,8 @@ trait TodasEntidadesRules {
         $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'processados_pagos', $filter);
         
         $this->comparar($liquidadosRP - $pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.2.1');
     }
     
     public function testRestosAPagarProcessadosPagos() {
@@ -2174,6 +2328,8 @@ trait TodasEntidadesRules {
         $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'processados_pagos', $filter);
         
         $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.2.2');
     }
     
     public function testRestosAPagarProcessadosCancelados() {
@@ -2194,6 +2350,8 @@ trait TodasEntidadesRules {
         $pagosRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'processados_cancelados', $filter);
         
         $this->comparar($pagosRP, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.2.9');
     }
     
     public function testRestosAPagarProcessadosALiquidarInscricaoNoExercicioIgualAZero() {
@@ -2209,6 +2367,8 @@ trait TodasEntidadesRules {
         $saldoCredorRP = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
         $this->comparar(0, ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.2.7');
     }
     
     public function testRestosAPagarProcessadosALiquidarInscricaoNoExercicioIgualEmpenhadoNaoLiquidado() {
@@ -2235,18 +2395,24 @@ trait TodasEntidadesRules {
         $saldoCredor = $this->somaColuna($this->getDataFrame('BVER_ANT'), 'saldo_atual_credito', $filter);
 
         $this->comparar(($saldoCredor - $saldoDevedor), ($saldoCredorRP - $saldoDevedorRP));
+        
+        $this->saldoVerificado(__METHOD__, '6.3.2.7');
+        
     }
     
     public function testImobilizadoTestadoManualmente() {
         $this->assertTrue(true);
+        $this->conferenciaExterna(__METHOD__, '1.2.3');
     }
     
     public function testSuprimentosDeFundosIndividualmenteTestadosManualmente() {
         $this->assertTrue(true);
+        $this->conferenciaExterna(__METHOD__, '1.1.3.1.1.02', '8.9.1.2.1');
     }
     
     public function testDisponibilidadesTestadasManualmente() {
         $this->assertTrue(true);
+        $this->conferenciaExterna(__METHOD__, '1.1.1', '1.1.4');
     }
     
     public function testSaldosInvertidosTestadosManualmente() {

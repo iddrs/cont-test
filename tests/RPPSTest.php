@@ -24,9 +24,9 @@ class RPPSTest extends TestCase {
         EntidadesComReceitaRules,
         RPPSRules
     ;
-    public function setUp(): void {
-        ini_set('memory_limit', -1);
-    }
+//    public function setUp(): void {
+//        ini_set('memory_limit', -1);
+//    }
     
     
 }

@@ -21,7 +21,10 @@ trait PrefeituraRules {
         };
         $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
         $this->comparar(0.0, ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.2.3.3.01.02');
     }
 
     /**
@@ -36,7 +39,10 @@ trait PrefeituraRules {
         };
         $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
         $this->comparar(0.0, ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.5.0.4.01.01.01');
     }
     
     
@@ -66,6 +72,8 @@ trait PrefeituraRules {
         $saldoCredorControle = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filterControle);
 
         $this->comparar(($saldoCredorPassivo - $saldoDevedorPassivo), ($saldoCredorControle - $saldoDevedorControle));
+        
+        $this->saldoVerificado(__METHOD__, '2.1.1.1.1.05', '2.1.3.1.1.08', '8.1.2.9.1.01');
     }
     
     /**
@@ -93,6 +101,8 @@ trait PrefeituraRules {
         $saldoCredorControle = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filterControle);
 
         $this->comparar(($saldoCredorPassivo - $saldoDevedorPassivo), ($saldoCredorControle - $saldoDevedorControle));
+        
+        $this->saldoVerificado(__METHOD__, '2.2.1.1.1.04', '8.1.2.9.1.02');
     }
     
     /**
@@ -120,15 +130,18 @@ trait PrefeituraRules {
         };
         $decreto = $this->somaColuna($this->getDataFrame('DECRETO'), 'valor_credito_adicional', $filter);
 
-        
         $this->comparar(($saldoDevedor - $saldoCredor), $decreto);
+        
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.3.01');
     }
     
     public function testDividaAtivaTestadaManualmente() {
         $this->assertTrue(true);
+        $this->conferenciaExterna(__METHOD__, '1.1.2.5', '1.1.2.6', '1.2.1.1.1.04', '1.2.1.1.1.05');
     }
     
     public function testTermosDeFomentoIndividualmenteTestadosManualmente() {
         $this->assertTrue(true);
+        $this->conferenciaExterna(__METHOD__, '1.1.9.8.1.01', '8.1.2.2');
     }
 }

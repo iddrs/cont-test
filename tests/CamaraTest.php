@@ -22,9 +22,5 @@ class CamaraTest extends TestCase {
         TodasEntidadesRules,
         CamaraRules
     ;
-    public function setUp(): void {
-        ini_set('memory_limit', -1);
-    }
-    
     
 }

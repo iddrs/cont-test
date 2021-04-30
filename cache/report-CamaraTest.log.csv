@@ -1,0 +1,244 @@
+conta_contabil;uniorcam;saldo_atual_debito;saldo_atual_credito;especificacao;escrituracao;data_inicial;data_final;data_geracao;conferencia_externa;conferencia_saldo;conferencia_nivel;conferencia_natureza
+1.0.0.0.0.00.00.00.00.00.00.000;0101;1.434.427,10;0,00;ATIVO;N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.0.0.0.00.00.00.00.00.00.000;0101;1.371.233,44;0,00;"ATIVO CIRCULANTE";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.0.0.00.00.00.00.00.00.000;0101;197.567,21;0,00;"CAIXA E EQUIVALENTES DE CAIXA";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.0.00.00.00.00.00.00.000;0101;197.567,21;0,00;"CAIXA E EQUIVALENTES DE CAIXA EM MOEDA NACIONAL";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.00.00.00.00.00.00.000;0101;197.567,21;0,00;"CAIXA E EQUIVALENTES DE CAIXA EM MOEDA NACIONAL - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.19.00.00.00.00.00.000;0101;0,00;0,00;"BANCOS CONTA MOVIMENTO - DEMAIS CONTAS";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.19.12.00.00.00.00.000;0101;0,00;0,00;"BANCO DO ESTADO DO RIO GRANDE DO SUL";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.19.12.05.00.00.00.000;0101;0,00;0,00;"BANRISUL GERAL CAMARA MOV 0001 1064/04.080187.0-6";S;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.19.12.20.00.00.00.000;0101;0,00;0,00;"BANRISUL CM RETENCOES MOV 8001 1064/04.080187.0-6";S;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.50.00.00.00.00.00.000;0101;197.567,21;0,00;"APLICACOES FINANCEIRAS DE LIQUIDEZ IMEDIATA";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.50.03.00.00.00.00.000;0101;197.567,21;0,00;"FUNDOS DE INVESTIMENTO";N;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.1.1.1.50.03.22.00.00.00.000;0101;197.567,21;0,00;"BANRISUL GERAL CAMARA APLIC 0001 1064/04.080187.0-6";S;2021-01-01;2021-03-31;2021-04-07;testDisponibilidadesTestadasManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.3.0.0.00.00.00.00.00.00.000;0101;1.173.566,23;0,00;"DEMAIS CREDITOS E VALORES A CURTO PRAZO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.3.8.0.00.00.00.00.00.00.000;0101;1.173.566,23;0,00;"OUTROS CREDITOS A RECEBER E VALORES A CURTO PRAZO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.3.8.2.00.00.00.00.00.00.000;0101;1.173.566,23;0,00;"OUTROS CREDITOS A RECEBER E VALORES A CURTO PRAZO - INTRA-OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.3.8.2.99.00.00.00.00.00.000;0101;1.173.566,23;0,00;"OUTROS CREDITOS A RECEBER E VALORES DE  CURTO PRAZO - INTRA-OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.3.8.2.99.01.00.00.00.00.000;0101;1.173.566,23;0,00;"DUODECIMO A RECEBER DO EXECUTIVO - INTRA-OFSS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.9.0.0.00.00.00.00.00.00.000;0101;100,00;0,00;"VARIACOES PATRIMONIAIS DIMINUTIVAS PAGAS ANTECIPADAMENTE";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.9.3.0.00.00.00.00.00.00.000;0101;100,00;0,00;"ASSINATURAS E ANUIDADES A APROPRIAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.9.3.1.00.00.00.00.00.00.000;0101;100,00;0,00;"ASSINATURAS E ANUIDADES A APROPRIAR - CONSOLIDACAO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.9.8.0.00.00.00.00.00.00.000;0101;0,00;0,00;"DEMAIS VPD A APROPRIAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.9.8.1.00.00.00.00.00.00.000;0101;0,00;0,00;"DEMAIS VPD A APROPRIAR - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.1.9.8.1.12.00.00.00.00.00.000;0101;0,00;0,00;"INSCRICOES PAGAS ANTECIPADAMENTE";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.0.0.0.00.00.00.00.00.00.000;0101;63.193,66;0,00;"ATIVO NAO CIRCULANTE";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.0.0.00.00.00.00.00.00.000;0101;63.193,66;0,00;IMOBILIZADO;N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.0.00.00.00.00.00.00.000;0101;95.678,65;0,00;"BENS MOVEIS";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.00.00.00.00.00.00.000;0101;95.678,65;0,00;"BENS MOVEIS- CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.01.00.00.00.00.00.000;0101;27.243,00;0,00;"MAQUINAS, APARELHOS, EQUIPAMENTOS E FERRAMENTAS";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.01.02.00.00.00.00.000;0101;1.299,00;0,00;"APARELHOS E EQUIPAMENTOS DE COMUNICACAO";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.01.99.00.00.00.00.000;0101;25.944,00;0,00;"OUTRAS MAQUINAS, APARELHOS, EQUIPAMENTOS E FERRAMENTAS";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.02.00.00.00.00.00.000;0101;18.223,55;0,00;"BENS DE INFORMATICA";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.02.01.00.00.00.00.000;0101;2.350,00;0,00;"EQUIPAMENTOS DE PROCESSAMENTO DE DADOS";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.02.02.00.00.00.00.000;0101;15.873,55;0,00;"EQUIPAMENTOS DE TECNOLOGIA DA INFORMACAO";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.03.00.00.00.00.00.000;0101;21.864,90;0,00;"MOVEIS E UTENSILIOS";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.03.01.00.00.00.00.000;0101;1.789,00;0,00;"APARELHOS E UTENSILIOS DOMESTICOS";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.03.03.00.00.00.00.000;0101;20.075,90;0,00;"MOBILIARIO EM GERAL";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.04.00.00.00.00.00.000;0101;28.347,20;0,00;"MATERIAIS CULTURAIS, EDUCACIONAIS E DE COMUNICACAO";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.04.05.00.00.00.00.000;0101;9.650,00;0,00;"EQUIPAMENTOS PARA AUDIO, VIDEO E FOTO";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.04.99.00.00.00.00.000;0101;18.697,20;0,00;"OUTROS MATERIAIS CULTURAIS, EDUCACIONAIS E DE COMUNICACAO";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.99.00.00.00.00.00.000;0101;0,00;0,00;"DEMAIS BENS MOVEIS";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.1.1.99.08.00.00.00.00.000;0101;0,00;0,00;"BENS MOVEIS A CLASSIFICAR";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.0.00.00.00.00.00.00.000;0101;0,00;32.484,99;"(-) DEPRECIACAO, EXAUSTAO E AMORTIZACAO ACUMULADAS";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.1.00.00.00.00.00.00.000;0101;0,00;32.484,99;"(-) DEPRECIACAO, EXAUSTAO E AMORTIZACAO ACUMULADAS - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.1.01.00.00.00.00.00.000;0101;0,00;32.484,99;"(-) DEPRECIACAO ACUMULADA – BENS MOVEIS";N;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.1.01.01.00.00.00.00.000;0101;0,00;6.507,35;"(-) DEPRECIACAO ACUMULADA DE MAQUINAS, APARELHOS, EQUIPAMENTOS E FERRAMENTAS";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.1.01.02.00.00.00.00.000;0101;0,00;13.268,18;"(-) DEPRECIACAO ACUMULADA DE BENS DE INFORMATICA";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.1.01.03.00.00.00.00.000;0101;0,00;6.389,47;"(-) DEPRECIACAO ACUMULADA DE MOVEIS E UTENSILIOS";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+1.2.3.8.1.01.04.00.00.00.00.000;0101;0,00;6.319,99;"(-) DEPRECIACAO ACUMULADA DE MATERIAIS CULTURAIS, EDUCACIONAIS E DE COMUNICACAO";S;2021-01-01;2021-03-31;2021-04-07;testImobilizadoTestadoManualmente;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.0.0.0.0.00.00.00.00.00.00.000;0101;0,00;90.261,03;"PASSIVO E PATRIMONIO LIQUIDO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.0.0.0.00.00.00.00.00.00.000;0101;0,00;26.340,04;"PASSIVO CIRCULANTE";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.0.0.00.00.00.00.00.00.000;0101;0,00;23.969,92;"OBRIGACOES TRABALHISTAS, PREVIDENCIARIAS E ASSISTENCIAIS A PAGAR A CURTO PRAZO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.0.00.00.00.00.00.00.000;0101;0,00;13.013,19;"PESSOAL A PAGAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.00.00.00.00.00.00.000;0101;0,00;13.013,19;"PESSOAL A PAGAR - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.00.00.00.00.00.000;0101;0,00;13.013,19;"PESSOAL A PAGAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.01.00.00.00.00.000;0101;0,00;0,00;"SALARIOS, REMUNERACOES E BENEFICIOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.01.02.00.00.00.000;0101;0,00;0,00;"SALARIOS, REMUNERACOES E BENEFICIOS (F)";S;2021-01-01;2021-03-31;2021-04-07;;testSaldoFinalDeSalariosAPagarIgualAoSaldoLiquidadoAPagar;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.02.00.00.00.00.000;0101;0,00;13.013,19;"DECIMO TERCEIRO SALARIO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.02.01.00.00.00.000;0101;0,00;13.013,19;"DECIMO TERCEIRO SALARIO (P)";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.03.00.00.00.00.000;0101;0,00;0,00;FERIAS;N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.1.1.01.03.01.00.00.00.000;0101;0,00;0,00;"FERIAS (P)";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.0.00.00.00.00.00.00.000;0101;0,00;10.956,73;"ENCARGOS SOCIAIS A PAGAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.2.00.00.00.00.00.00.000;0101;0,00;896,86;"ENCARGOS SOCIAIS A PAGAR-INTRA OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.2.01.00.00.00.00.00.000;0101;0,00;896,86;"CONTRIBUICAO A REGIME PROPRIO DE PREVIDENCIA (RPPS)";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.2.01.02.00.00.00.00.000;0101;0,00;896,86;"CONTRIBUICAO A REGIME PROPRIO DE PREVIDENCIA (RPPS) (F)";S;2021-01-01;2021-03-31;2021-04-07;;testSaldoFinalDeContribuicaoAoRppsIgualAoSaldoLiquidadoAPagar;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.3.00.00.00.00.00.00.000;0101;0,00;10.059,87;"ENCARGOS SOCIAIS A PAGAR-INTER OFSS - UNIAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.3.01.00.00.00.00.00.000;0101;0,00;10.059,87;"CONTRIBUICOES AO RGPS A PAGAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.3.01.01.00.00.00.00.000;0101;0,00;10.059,87;"CONTRIBUICOES AO RGPS SOBRE SALARIOS E REMUNERACOES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.1.4.3.01.01.02.00.00.00.000;0101;0,00;10.059,87;"CONTRIBUICOES AO RGPS SOBRE SALARIOS E REMUNERACOES (F)";S;2021-01-01;2021-03-31;2021-04-07;;testSaldoFinalDeContribuicaoAoRgpsIgualAoSaldoLiquidadoAPagar;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.3.0.0.00.00.00.00.00.00.000;0101;0,00;2.370,12;"FORNECEDORES E CONTAS A PAGAR A CURTO PRAZO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.3.1.0.00.00.00.00.00.00.000;0101;0,00;2.370,12;"FORNECEDORES E CONTAS A PAGAR NACIONAIS A CURTO PRAZO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.3.1.1.00.00.00.00.00.00.000;0101;0,00;2.370,12;"FORNECEDORES E CONTAS A PAGAR NACIONAIS A CURTO PRAZO - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.3.1.1.01.00.00.00.00.00.000;0101;0,00;2.370,12;"FORNECEDORES NACIONAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.3.1.1.01.01.00.00.00.00.000;0101;0,00;2.370,12;"FORNECEDORES NAO PARCELADOS A PAGAR";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.3.1.1.01.01.01.00.00.00.000;0101;0,00;2.370,12;"FORNECEDORES DO EXERCICIO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.0.0.00.00.00.00.00.00.000;0101;0,00;0,00;"DEMAIS OBRIGACOES A CURTO PRAZO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.0.00.00.00.00.00.00.000;0101;0,00;0,00;"VALORES RESTITUIVEIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.1.00.00.00.00.00.00.000;0101;0,00;0,00;"VALORES RESTITUIVEIS - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.1.04.00.00.00.00.00.000;0101;0,00;0,00;"DEPOSITOS NAO JUDICIAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.1.04.99.00.00.00.00.000;0101;0,00;0,00;"OUTROS DEPOSITOS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.2.00.00.00.00.00.00.000;0101;0,00;0,00;"VALORES RESTITUIVEIS – INTRA OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.2.99.01.00.00.00.00.000;0101;0,00;0,00;"OUTROS VALORES RESTITUIVEIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.2.99.01.01.00.00.00.000;0101;0,00;0,00;"DESCONTOS A RECOLHER AO TESOURO MUNICIPAL";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.3.00.00.00.00.00.00.000;0101;0,00;0,00;"VALORES RESTITUIVEIS - INTER UNIAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.3.01.00.00.00.00.00.000;0101;0,00;0,00;CONSIGNACOES;N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.3.01.04.00.00.00.00.000;0101;0,00;0,00;"IMPOSTO SOBRE A RENDA RETIDO NA FONTE - IRRF";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.1.8.8.3.01.04.02.00.00.00.000;0101;0,00;0,00;"IRRF SERVICOS PJ 1708-06 LEGISLATIVO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.0.0.0.00.00.00.00.00.00.000;0101;0,00;63.920,99;"PATRIMONIO LIQUIDO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.0.0.00.00.00.00.00.00.000;0101;0,00;63.920,99;"RESULTADOS ACUMULADOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.0.00.00.00.00.00.00.000;0101;0,00;63.920,99;"SUPERAVITS OU DEFICITS ACUMULADOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.1.00.00.00.00.00.00.000;0101;0,00;451.265,40;"SUPERAVITS OU DEFICITS ACUMULADOS - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.1.01.00.00.00.00.00.000;0101;0,00;0,00;"SUPERAVITS OU DEFICITS DO EXERCICIO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.1.02.00.00.00.00.00.000;0101;0,00;451.265,40;"SUPERAVITS OU DEFICITS DE EXERCICIOS ANTERIORES";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.2.00.00.00.00.00.00.000;0101;0,00;0,00;"SUPERAVITS OU DEFICITS ACUMULADOS - INTRA OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.2.01.00.00.00.00.00.000;0101;0,00;0,00;"SUPERAVITS OU DEFICITS DO EXERCICIO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.2.02.00.00.00.00.00.000;0101;0,00;0,00;"SUPERAVITS OU DEFICITS DE EXERCICIOS ANTERIORES";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.3.00.00.00.00.00.00.000;0101;387.344,41;0,00;"SUPERAVITS OU DEFICITS ACUMULADOS - INTER OFSS - UNIAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.3.01.00.00.00.00.00.000;0101;0,00;0,00;"SUPERAVITS OU DEFICITS DO EXERCICIO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+2.3.7.1.3.02.00.00.00.00.00.000;0101;387.344,41;0,00;"SUPERAVITS OU DEFICITS DE EXERCICIOS ANTERIORES";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.0.0.0.0.00.00.00.00.00.00.000;0101;610.267,70;0,00;"VARIACAO PATRIMONIAL DIMINUTIVA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.0.0.0.00.00.00.00.00.00.000;0101;201.977,64;0,00;"PESSOAL E ENCARGOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.0.0.00.00.00.00.00.00.000;0101;169.907,43;0,00;"REMUNERACAO A PESSOAL";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.0.00.00.00.00.00.00.000;0101;18.952,92;0,00;"REMUNERACAO A PESSOAL ATIVO CIVIL – ABRANGIDOS PELO RPPS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.1.00.00.00.00.00.00.000;0101;18.952,92;0,00;"REMUNERACAO A PESSOAL ATIVO CIVIL – ABRANGIDOS PELO RPPS - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.1.01.00.00.00.00.00.000;0101;18.952,92;0,00;"VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL - RPPS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.1.01.01.00.00.00.00.000;0101;14.901,48;0,00;"VENCIMENTOS E SALARIOS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.1.01.18.00.00.00.00.000;0101;1.914,69;0,00;"GRATIFICACAO DE TEMPO DE SERVICO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.1.01.22.00.00.00.00.000;0101;1.401,36;0,00;"13o SALARIO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.1.1.01.24.00.00.00.00.000;0101;735,39;0,00;"FERIAS – ABONO CONSTITUCIONAL";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.0.00.00.00.00.00.00.000;0101;150.954,51;0,00;"REMUNERACAO A PESSOAL ATIVO CIVIL – ABRANGIDOS PELO RGPS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.1.00.00.00.00.00.00.000;0101;150.954,51;0,00;"REMUNERACAO A PESSOAL ATIVO CIVIL – ABRANGIDOS PELO RGPS - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.1.01.00.00.00.00.00.000;0101;150.954,51;0,00;"VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL - RGPS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.1.01.01.00.00.00.00.000;0101;31.165,01;0,00;"VENCIMENTOS E SALARIOS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.1.01.22.00.00.00.00.000;0101;11.611,83;0,00;"13o SALARIO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.1.01.28.00.00.00.00.000;0101;3.583,80;0,00;"REPRESENTACAO MENSAL";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.1.2.1.01.31.00.00.00.00.000;0101;104.593,87;0,00;SUBSIDIOS;S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.0.0.00.00.00.00.00.00.000;0101;32.070,21;0,00;"ENCARGOS PATRONAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.1.0.00.00.00.00.00.00.000;0101;2.808,24;0,00;"ENCARGOS PATRONAIS - RPPS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.1.2.00.00.00.00.00.00.000;0101;2.808,24;0,00;"ENCARGOS PATRONAIS - RPPS - INTRA OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.1.2.01.00.00.00.00.00.000;0101;2.808,24;0,00;"CONTRIBUICAO PATRONAL PARA O RPPS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.2.0.00.00.00.00.00.00.000;0101;29.261,97;0,00;"ENCARGOS PATRONAIS - RGPS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.2.3.00.00.00.00.00.00.000;0101;29.261,97;0,00;"ENCARGOS PATRONAIS - RGPS - INTER OFSS - UNIAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.1.2.2.3.01.00.00.00.00.00.000;0101;29.261,97;0,00;"CONTRIBUICOES PREVIDENCIARIAS - RGPS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.0.0.0.00.00.00.00.00.00.000;0101;17.856,29;0,00;"USO DE BENS, SERVICOS E CONSUMO DE CAPITAL FIXO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.0.0.00.00.00.00.00.00.000;0101;8.456,49;0,00;"USO DE MATERIAL DE CONSUMO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.0.00.00.00.00.00.00.000;0101;8.456,49;0,00;"CONSUMO DE MATERIAL";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.00.00.00.00.00.00.000;0101;8.456,49;0,00;"CONSUMO DE MATERIAL - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.06.00.00.00.00.00.000;0101;5.208,00;0,00;"GENEROS ALIMENTACAO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.16.00.00.00.00.00.000;0101;842,90;0,00;"MATERIAL DE EXPEDIENTE";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.21.00.00.00.00.00.000;0101;383,67;0,00;"MATERIAL DE COPA E COZINHA";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.22.00.00.00.00.00.000;0101;1.398,92;0,00;"MATERIAL DE LIMPEZA E PRODUTOS DE HIGIENIZACAO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.24.00.00.00.00.00.000;0101;263,00;0,00;"MATERIAL PARA MANUTENCAO DE BENS IMOVEIS E INSTALACOES";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.1.1.1.29.00.00.00.00.00.000;0101;360,00;0,00;"MATERIAL PARA AUDIO, VIDEO E FOTO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.0.0.00.00.00.00.00.00.000;0101;7.767,09;0,00;SERVICOS;N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.2.0.00.00.00.00.00.00.000;0101;1.500,00;0,00;"SERVICOS TERCEIROS - PF";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.2.1.00.00.00.00.00.00.000;0101;1.500,00;0,00;"SERVICOS TERCEIROS - PF - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.2.1.01.00.00.00.00.00.000;0101;1.500,00;0,00;"CONSULTORIA E ASSESSORIA";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.0.00.00.00.00.00.00.000;0101;6.267,09;0,00;"SERVICOS TERCEIROS - PJ";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.00.00.00.00.00.00.000;0101;6.267,09;0,00;"SERVICOS TERCEIROS - PJ - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.04.00.00.00.00.00.000;0101;658,75;0,00;COMUNICACAO;S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.05.00.00.00.00.00.000;0101;54,00;0,00;PUBLICIDADE;S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.10.00.00.00.00.00.000;0101;1.200,00;0,00;LOCACOES;S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.11.00.00.00.00.00.000;0101;1.342,72;0,00;"SERVICOS RELACIONADOS A TECNOLOGIA DA INFORMACAO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.14.00.00.00.00.00.000;0101;29,62;0,00;"ASSINATURAS DE PERIODICOS E ANUIDADES";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.30.00.00.00.00.00.000;0101;2.250,00;0,00;"SELECAO E TREINAMENTO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.36.00.00.00.00.00.000;0101;500,00;0,00;"SERVICOS DE AUDIO VIDEO E FOTO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.2.3.1.46.00.00.00.00.00.000;0101;232,00;0,00;"SERVICOS GRAFICOS E EDITORIAIS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.3.0.0.00.00.00.00.00.00.000;0101;1.632,71;0,00;"DEPRECIACAO, AMORTIZACAO E EXAUSTAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.3.1.0.00.00.00.00.00.00.000;0101;1.632,71;0,00;DEPRECIACAO;N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.3.1.1.00.00.00.00.00.00.000;0101;1.632,71;0,00;"DEPRECIACAO - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.3.1.1.01.00.00.00.00.00.000;0101;1.632,71;0,00;"DEPRECIACAO DE IMOBILIZADO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.3.3.1.1.01.01.00.00.00.00.000;0101;1.632,71;0,00;"DEPRECIACAO DE BENS MOVEIS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.6.0.0.0.00.00.00.00.00.00.000;0101;390.433,77;0,00;"DESVALORIZACAO E PERDA DE ATIVOS E INCORPORACAO DE PASSIVOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.6.5.0.0.00.00.00.00.00.00.000;0101;390.433,77;0,00;"DESINCORPORACAO DE ATIVOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.6.5.1.0.00.00.00.00.00.00.000;0101;390.433,77;0,00;"DESINCORPORACAO DE ATIVOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.6.5.1.2.00.00.00.00.00.00.000;0101;390.433,77;0,00;"DESINCORPORACAO DE ATIVOS - INTRA OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.6.5.1.2.03.00.00.00.00.00.000;0101;390.433,77;0,00;"DESINCORPORACAO DE CREDITOS A RECEBER - INTRA-OFSS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.9.0.0.0.00.00.00.00.00.00.000;0101;0,00;0,00;"OUTRAS VARIACOES PATRIMONIAIS DIMINUTIVAS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.9.9.0.0.00.00.00.00.00.00.000;0101;0,00;0,00;"DIVERSAS VARIACOES PATRIMONIAIS DIMINUTIVAS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.9.9.6.0.00.00.00.00.00.00.000;0101;0,00;0,00;"INDENIZACOES, RESTITUICOES E RESSARCIMENTOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+3.9.9.6.1.00.00.00.00.00.00.000;0101;0,00;0,00;"INDENIZACOES, RESTITUICOES E RESSARCIMENTOS - CONSOLIDACAO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.0.0.0.0.00.00.00.00.00.00.000;0101;0,00;1.954.433,77;"VARIACAO PATRIMONIAL AUMENTATIVA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.5.0.0.0.00.00.00.00.00.00.000;0101;0,00;390.433,77;"TRANSFERENCIAS E DELEGACOES RECEBIDAS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.5.1.0.0.00.00.00.00.00.00.000;0101;0,00;390.433,77;"TRANSFERENCIAS INTRAGOVERNAMENTAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.5.1.1.0.00.00.00.00.00.00.000;0101;0,00;390.433,77;"TRANSFERENCIAS RECEBIDAS PARA A EXECUCAO ORCAMENTARIA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.5.1.1.2.00.00.00.00.00.00.000;0101;0,00;390.433,77;"TRANSFERENCIAS RECEBIDAS PARA A EXECUCAO ORCAMENTARIA - INTRA OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.5.1.1.2.02.00.00.00.00.00.000;0101;0,00;390.433,77;"REPASSE RECEBIDO";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.9.0.0.0.00.00.00.00.00.00.000;0101;0,00;1.564.000,00;"OUTRAS VARIACOES PATRIMONIAIS AUMENTATIVAS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.9.9.0.0.00.00.00.00.00.00.000;0101;0,00;1.564.000,00;"DIVERSAS VARIACOES PATRIMONIAIS AUMENTATIVAS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.9.9.9.0.00.00.00.00.00.00.000;0101;0,00;1.564.000,00;"VARIACOES PATRIMONIAIS AUMENTATIVAS DECORRENTES DE FATOS GERADORES DIVERSOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.9.9.9.2.00.00.00.00.00.00.000;0101;0,00;1.564.000,00;"VARIACOES PATRIMONIAIS AUMENTATIVAS DECORRENTES DE FATOS GERADORES DIVERSOS - INTRA-OFSS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+4.9.9.9.2.01.00.00.00.00.00.000;0101;0,00;1.564.000,00;"DUODECIMO LEGISLATIVO - INTRA-OFSS";S;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasPatrimoniais
+5.0.0.0.0.00.00.00.00.00.00.000;0101;1.791.604,04;0,00;"CONTROLES DA APROVACAO DO PLANEJAMENTO E ORCAMENTO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.0.0.0.00.00.00.00.00.00.000;0101;1.791.604,04;0,00;"ORCAMENTO APROVADO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.0.0.00.00.00.00.00.00.000;0101;1.791.604,04;0,00;"FIXACAO DA DESPESA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.1.0.00.00.00.00.00.00.000;0101;1.564.000,00;0,00;"DOTACAO ORCAMENTARIA";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.1.1.00.00.00.00.00.00.000;0101;1.564.000,00;0,00;"DOTACAO INICIAL";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.1.1.01.00.00.00.00.00.000;0101;1.564.000,00;0,00;"CREDITO INICIAL";S;2021-01-01;2021-03-31;2021-04-07;;testCreditoInicialContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.9.0.00.00.00.00.00.00.000;0101;227.604,04;0,00;"OUTROS CONTROLES DA DESPESA ORCAMENTARIA";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.9.2.00.00.00.00.00.00.000;0101;227.604,04;0,00;"EMPENHOS POR EMISSAO";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.9.2.01.00.00.00.00.00.000;0101;227.604,04;0,00;"EXECUCAO DA DESPESA POR NOTA DE EMPENHO";N;2021-01-01;2021-03-31;2021-04-07;;testEmissaoDeNotasDeEmpenhosContabilizada;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.9.2.01.01.00.00.00.00.000;0101;230.551,47;0,00;"EMISSAO DE EMPENHOS";S;2021-01-01;2021-03-31;2021-04-07;;testEmissaoDeNotasDeEmpenhosContabilizada;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+5.2.2.9.2.01.03.00.00.00.00.000;0101;0,00;2.947,43;"(-) ANULACAO DE EMPENHOS";S;2021-01-01;2021-03-31;2021-04-07;;testEmissaoDeNotasDeEmpenhosContabilizada;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+6.0.0.0.0.00.00.00.00.00.00.000;0101;0,00;1.791.604,04;"CONTROLES DA EXECUCAO DO PLANEJAMENTO E ORCAMENTO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.0.0.0.00.00.00.00.00.00.000;0101;0,00;1.791.604,04;"EXECUCAO DO ORCAMENTO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.0.0.00.00.00.00.00.00.000;0101;0,00;1.791.604,04;"EXECUCAO DA DESPESA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.1.0.00.00.00.00.00.00.000;0101;0,00;1.564.000,00;"DISPONIBILIDADES DE CREDITO";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.1.1.00.00.00.00.00.00.000;0101;0,00;1.336.395,96;"CREDITO DISPONIVEL";S;2021-01-01;2021-03-31;2021-04-07;;testDotacaoDisponivelContabilizada;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.1.3.00.00.00.00.00.00.000;0101;0,00;227.604,04;"CREDITO UTILIZADO";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.1.3.01.00.00.00.00.00.000;0101;0,00;21.410,63;"CREDITO EMPENHADO A LIQUIDAR";S;2021-01-01;2021-03-31;2021-04-07;;testCreditoEmpenhadoALiquidarContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.1.3.03.00.00.00.00.00.000;0101;0,00;13.326,85;"CREDITO EMPENHADO LIQUIDADO A PAGAR";S;2021-01-01;2021-03-31;2021-04-07;;testCreditoLiquidadoAPagarContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.1.3.04.00.00.00.00.00.000;0101;0,00;192.866,56;"CREDITO EMPENHADO LIQUIDADO PAGO";S;2021-01-01;2021-03-31;2021-04-07;;testCreditoLiquidadoPagoContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeDotacaoOrcamentaria;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.9.0.00.00.00.00.00.00.000;0101;0,00;227.604,04;"OUTROS CONTROLES DA DESPESA ORCAMENTARIA";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.9.2.00.00.00.00.00.00.000;0101;0,00;227.604,04;"EMISSAO DE EMPENHO";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.9.2.01.00.00.00.00.00.000;0101;0,00;227.604,04;"EMPENHOS POR NOTA DE EMPENHO";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.9.2.01.01.00.00.00.00.000;0101;0,00;21.410,63;"EMPENHOS A LIQUIDAR";S;2021-01-01;2021-03-31;2021-04-07;;testEmpenhosALiquidarContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.9.2.01.03.00.00.00.00.000;0101;0,00;13.326,85;"EMPENHOS LIQUIDADOS A PAGAR";S;2021-01-01;2021-03-31;2021-04-07;;testEmpenhoLiquidadoAPagarContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+6.2.2.9.2.01.04.00.00.00.00.000;0101;0,00;192.866,56;"EMPENHOS LIQUIDADOS PAGOS";S;2021-01-01;2021-03-31;2021-04-07;;testEmpenhosPagosContabilizado;testFechamentoDosNiveisDasContasOrcamentariasDeOutrosControlesDaDespesa;testFechamentoDosLancamentosNasContasOrcamentarias
+7.0.0.0.0.00.00.00.00.00.00.000;0101;634.192,97;0,00;"CONTROLES DEVEDORES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.1.0.0.0.00.00.00.00.00.00.000;0101;8.961,10;0,00;"ATOS POTENCIAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.1.2.0.0.00.00.00.00.00.00.000;0101;8.961,10;0,00;"ATOS POTENCIAIS PASSIVOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.1.2.3.0.00.00.00.00.00.00.000;0101;8.961,10;0,00;"OBRIGACOES CONTRATUAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.1.2.3.1.00.00.00.00.00.00.000;0101;8.961,10;0,00;"OBRIGACOES CONTRATUAIS - CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.1.2.3.1.02.00.00.00.00.00.000;0101;8.961,10;0,00;"CONTRATOS DE SERVICOS";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos;testFechamentoDosLancamentosNasContasDeControle
+7.2.0.0.0.00.00.00.00.00.00.000;0101;390.457,87;0,00;"ADMINISTRACAO FINANCEIRA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.2.1.0.0.00.00.00.00.00.00.000;0101;390.457,87;0,00;"DISPONIBILIDADES POR DESTINACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.2.1.1.0.00.00.00.00.00.00.000;0101;390.457,87;0,00;"CONTROLE DA DISPONIBILIDADE DE RECURSOS";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+7.2.1.1.1.00.00.00.00.00.00.000;0101;390.433,77;0,00;"RECURSOS ORDINARIOS";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+7.2.1.1.1.00.01.00.00.00.00.000;0101;390.433,77;0,00;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - LIVRE";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+7.2.1.1.3.80.01.00.00.00.00.000;0101;24,10;0,00;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - RETENCOES E OUTROS EXTRAORCAMENTARIOS";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+7.9.0.0.0.00.00.00.00.00.00.000;0101;234.774,00;0,00;"OUTROS CONTROLES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.9.9.0.0.00.00.00.00.00.00.000;0101;234.774,00;0,00;"DEMAIS CONTROLES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.9.9.9.0.00.00.00.00.00.00.000;0101;234.774,00;0,00;"DEMAIS CONTROLES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+7.9.9.9.1.00.00.00.00.00.00.000;0101;174,00;0,00;"DESPESA SEM EMPENHO PREVIO";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDespesaSemEmpenhoPrevio;testFechamentoDosLancamentosNasContasDeControle
+7.9.9.9.4.00.00.00.00.00.00.000;0101;234.600,00;0,00;"LIMITE DE SUPLEMENTACAO AUTORIZADO NA LOA UTILIZADO";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeLimiteDeSuplementacao;testFechamentoDosLancamentosNasContasDeControle
+8.0.0.0.0.00.00.00.00.00.00.000;0101;0,00;634.192,97;"CONTROLES CREDORES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.1.0.0.0.00.00.00.00.00.00.000;0101;0,00;8.961,10;"EXECUCAO DOS ATOS POTENCIAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.1.2.0.0.00.00.00.00.00.00.000;0101;0,00;8.961,10;"EXECUCAO DOS ATOS POTENCIAIS PASSIVOS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.1.2.3.0.00.00.00.00.00.00.000;0101;0,00;8.961,10;"EXECUCAO DE OBRIGACOES CONTRATUAIS";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.1.2.3.1.00.00.00.00.00.00.000;0101;0,00;8.961,10;"EXECUCAO DE OBRIGACOES -CONSOLIDACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.1.2.3.1.02.00.00.00.00.00.000;0101;0,00;8.961,10;"CONTRATOS DE SERVICOS";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos;testFechamentoDosLancamentosNasContasDeControle
+8.1.2.3.1.02.01.00.00.00.00.000;0101;0,00;1.207,16;"A EXECUTAR";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos;testFechamentoDosLancamentosNasContasDeControle
+8.1.2.3.1.02.02.00.00.00.00.000;0101;0,00;7.753,94;EXECUTADOS;S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos;testFechamentoDosLancamentosNasContasDeControle
+8.2.0.0.0.00.00.00.00.00.00.000;0101;0,00;390.457,87;"EXECUCAO DA ADMINISTRACAO FINANCEIRA";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.0.0.00.00.00.00.00.00.000;0101;0,00;390.457,87;"EXECUCAO DAS DISPONIBILIDADES POR DESTINACAO";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.0.00.00.00.00.00.00.000;0101;0,00;390.457,87;"EXECUCAO DA DISPONIBILIDADE DE RECURSOS";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.1.00.00.00.00.00.00.000;0101;0,00;162.829,73;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS";N;2021-01-01;2021-03-31;2021-04-07;;testRecursosDisponiveis;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.1.01.00.01.00.00.00.000;0101;0,00;162.829,73;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - LIVRE";S;2021-01-01;2021-03-31;2021-04-07;;testRecursosDisponiveis;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.2.00.00.00.00.00.00.000;0101;0,00;21.410,63;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS COMPROMETIDA POR EMPENHO";N;2021-01-01;2021-03-31;2021-04-07;;testRecursosComprometidosPorEmpenhoALiquidar;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.2.01.00.01.00.00.00.000;0101;0,00;21.410,63;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS COMPROMETIDA POR EMPENHO - LIVRE";S;2021-01-01;2021-03-31;2021-04-07;;testRecursosComprometidosPorEmpenhoALiquidar;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.3.00.00.00.00.00.00.000;0101;0,00;13.326,85;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS COMPROMETIDA POR LIQUIDACAO E ENTRADAS COMPENSATORIAS";N;2021-01-01;2021-03-31;2021-04-07;;testRecursosComprometidosPorLiquidacaoEExtrasAPagar;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.3.01.00.01.00.00.00.000;0101;0,00;13.326,85;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - LIVRE";S;2021-01-01;2021-03-31;2021-04-07;;testRecursosComprometidosPorLiquidacaoEExtrasAPagar;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.3.02.80.01.00.00.00.000;0101;0,00;0,00;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - RETENCOES E OUTROS EXTRAORCAMENTARIOS";S;2021-01-01;2021-03-31;2021-04-07;;testRecursosComprometidosPorLiquidacaoEExtrasAPagar;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.4.00.00.00.00.00.00.000;0101;0,00;192.890,66;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS UTILIZADA";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.4.00.01.00.00.00.00.000;0101;0,00;192.866,56;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - LIVRE";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.2.1.1.4.80.01.00.00.00.00.000;0101;0,00;24,10;"DISPONIBILIDADE POR DESTINACAO DE RECURSOS - RETENCOES E OUTROS EXTRAORCAMENTARIOS";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades;testFechamentoDosLancamentosNasContasDeControle
+8.9.0.0.0.00.00.00.00.00.00.000;0101;0,00;234.774,00;"OUTROS CONTROLES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.0.0.00.00.00.00.00.00.000;0101;0,00;234.774,00;"DEMAIS CONTROLES CREDORES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.9.0.00.00.00.00.00.00.000;0101;0,00;234.774,00;"DEMAIS CONTROLES";N;2021-01-01;2021-03-31;2021-04-07;;;;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.9.1.00.00.00.00.00.00.000;0101;0,00;174,00;"DESPESA SEM EMPENHO PREVIO - ART. 60 L4320/64";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDespesaSemEmpenhoPrevio;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.9.1.01.00.00.00.00.00.000;0101;0,00;174,00;"DESPESA SEM EMPENHO PREVIO EM 2021";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeDespesaSemEmpenhoPrevio;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.9.4.00.00.00.00.00.00.000;0101;0,00;234.600,00;"CONTROLE DA SUPLEMENTACAO AUTORIZADO EM LOA";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeLimiteDeSuplementacao;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.9.4.01.00.00.00.00.00.000;0101;0,00;234.600,00;"LOA 2021 LEI 2972/2020";N;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeLimiteDeSuplementacao;testFechamentoDosLancamentosNasContasDeControle
+8.9.9.9.4.01.01.00.00.00.00.000;0101;0,00;234.600,00;"LIMITE DISPONIVEL";S;2021-01-01;2021-03-31;2021-04-07;;;testFechamentoDosNiveisDasContasDeControleDeLimiteDeSuplementacao;testFechamentoDosLancamentosNasContasDeControle

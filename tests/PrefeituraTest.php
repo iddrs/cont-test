@@ -24,9 +24,9 @@ class PrefeituraTest extends TestCase {
         EntidadesComReceitaRules,
         PrefeituraRules
     ;
-    public function setUp(): void {
-        ini_set('memory_limit', -1);
-    }
+//    public function setUp(): void {
+//        ini_set('memory_limit', -1);
+//    }
     
     
 }
