@@ -32,6 +32,8 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 8.1.2.2.1.01;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesConveniadas
 7.1.2.3.1.02;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos
 8.1.2.3.1.02;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos
+7.1.2.3.1.01;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeSeguros
+8.1.2.3.1.01;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeSeguros
 7.1.2.3.1.04;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeFornecimentoDeBens
 8.1.2.3.1.04;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeFornecimentoDeBens
 7.1.2.3.1.99;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeOutrasObrigacoesContratuais
@@ -39,7 +41,7 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 7.1.2.9.1.01;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosIncluidosNoOrcamento
 8.1.2.9.1.01;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosIncluidosNoOrcamento
 7.1.2.9.1.02;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosNaoIncluidosNoOrcamento
-8.1.2.29.1.02;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosNaoIncluidosNoOrcamento
+8.1.2.9.1.02;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosNaoIncluidosNoOrcamento
 7.2.1.1;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades
 8.2.1.1;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades
 7.4.1.1.1;1201;1299;nivel;testFechamentoDosNiveisDasContasDeControleDePassivosContingentesDeDemandasJudiciais

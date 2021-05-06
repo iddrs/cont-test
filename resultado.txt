@@ -1,0 +1,417 @@
+ABRIL/2021 - PAD de teste gerados em 06mai2021
+Camara (IDDRS\ConTest\Tests\Camara)
+ [x] Saldo final de adiantamentos de salario igual a zero
+ [x] Saldo final de adiantamentos de ferias igual a zero
+ [x] Saldo final de outros adiantamentos igual a zero
+ [x] Saldo final de suprimentos de fundos do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de parcerias a apropriar do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de salarios a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de ferias a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de pasep a pagar igual ao saldo liquidado a pagar
+ [x] Saldo de recursos extra orcamentarios igual ao saldo do passivo a recolher menos o ativo a compensar deduzidos dos sequestros
+ [x] Fechamento dos lancamentos nas contas patrimoniais
+ [x] Credito inicial contabilizado
+ [x] Credito suplementar contabilizado
+ [x] Credito especial contabilizado
+ [x] Credito extraordinario contabilizado
+ [x] Credito reaberto contabilizado
+ [x] Anulacao de dotacao contabilizada
+ [x] Cancelamento de dotacao contabilizada
+ [x] Emissao de notas de empenhos contabilizada
+ [x] Dotacao disponivel contabilizada
+ [x] Credito empenhado a liquidar contabilizado
+ [x] Credito liquidado a pagar contabilizado
+ [x] Credito liquidado pago contabilizado
+ [x] Empenhos a liquidar contabilizado
+ [x] Empenho liquidado a pagar contabilizado
+ [x] Empenhos pagos contabilizado
+ [x] Fechamento dos lancamentos nas contas orcamentarias
+ [x] Fechamento dos niveis das contas orcamentarias de dotacao orcamentaria
+ [x] Fechamento dos niveis das contas orcamentarias de outros controles da despesa
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar nao processados
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar processados
+ [x] Recursos disponiveis
+ [x] Recursos comprometidos por empenho a liquidar
+ [x] Recursos comprometidos por liquidacao e extras a pagar
+ [x] Valores transferidos por contrato de rateio upa santa rosa
+ [x] Valores transferidos por contrato de rateio samu santa rosa
+ [x] Valores transferidos por contrato de rateio mensalidade cofron
+ [x] Fechamento dos lancamentos nas contas de controle
+ [x] Fechamento dos niveis das contas de controle de contratos de alugueis
+ [x] Fechamento dos niveis das contas de controle de bens do imobilizado cedidos
+ [x] Fechamento dos niveis das contas de controle de plano de amortizacao do deficit atuarial
+ [x] Fechamento dos niveis das contas de controle de ativos contingentes
+ [x] Fechamento dos niveis das contas de controle de obrigacoes conveniadas
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de servicos
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de fornecimento de bens
+ [x] Fechamento dos niveis das contas de controle de outras obrigacoes contratuais
+ [x] Fechamento dos niveis das contas de controle de precatorios incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de precatorios nao incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de disponibilidades
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de demandas judiciais
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de dividas em reconhecimento
+ [x] Fechamento dos niveis das contas de controle de outros passivos contingentes
+ [x] Fechamento dos niveis das contas de controle de valores transferidos por contrato de rateio
+ [x] Fechamento dos niveis das contas de controle de despesas executadas em consorcio
+ [x] Fechamento dos niveis das contas de controle de outras responsabilidades de terceiros
+ [x] Fechamento dos niveis das contas de controle de suprimento de fundos
+ [x] Fechamento dos niveis das contas de controle de pagamentos sem respaldo orcamentario
+ [x] Fechamento dos niveis das contas de controle de responsaveis por danos ao patrimonio
+ [x] Fechamento dos niveis das contas de controle de despesa sem empenho previo
+ [x] Fechamento dos niveis das contas de controle de superavit financeiro disponivel
+ [x] Fechamento dos niveis das contas de controle de limite de suplementacao
+ [x] Saldo final de contribuicao ao rpps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao rgps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao fgts igual ao saldo liquidado a pagar
+ [x] Restos a pagar nao processados inscritos no exercicio
+ [x] Restos a pagar processados inscritos no exercicio
+ [x] Restos a pagar nao processados inscritos
+ [x] Restos a pagar processados inscritos
+ [x] Restos a pagar nao processados inscricao no exercicio igual a zero
+ [x] Restos a pagar processados inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar processados inscricao no exercicio igual liquidado nao pago
+ [x] Restos a pagar nao processados a liquidar
+ [x] Restos a pagar nao processados a pagar
+ [x] Restos a pagar nao processados pagos
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar nao processados cancelados
+ [x] Restos a pagar processados a pagar
+ [x] Restos a pagar processados pagos
+ [x] Restos a pagar processados cancelados
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Imobilizado testado manualmente
+ [x] Suprimentos de fundos individualmente testados manualmente
+ [x] Disponibilidades testadas manualmente
+ [x] Saldos invertidos testados manualmente
+ [x] Contas patrimoniais com indicador de superavit financeiro igual x testadas manualmente
+ [x] Fechamento das fontes de recursos testado manualmente
+ [x] Receita arrecadada igual a zero
+
+Consolidado (IDDRS\ConTest\Tests\Consolidado)
+ [x] Saldo final de adiantamentos de salario igual a zero
+ [x] Saldo final de adiantamentos de ferias igual a zero
+ [x] Saldo final de outros adiantamentos igual a zero
+ [x] Saldo final de suprimentos de fundos do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de parcerias a apropriar do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de salarios a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de ferias a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de pasep a pagar igual ao saldo liquidado a pagar
+ [x] Saldo de recursos extra orcamentarios igual ao saldo do passivo a recolher menos o ativo a compensar deduzidos dos sequestros
+ [x] Fechamento dos lancamentos nas contas patrimoniais
+ [x] Credito inicial contabilizado
+ [x] Credito suplementar contabilizado
+ [x] Credito especial contabilizado
+ [x] Credito extraordinario contabilizado
+ [x] Credito reaberto contabilizado
+ [x] Anulacao de dotacao contabilizada
+ [x] Cancelamento de dotacao contabilizada
+ [x] Emissao de notas de empenhos contabilizada
+ [x] Dotacao disponivel contabilizada
+ [x] Credito empenhado a liquidar contabilizado
+ [x] Credito liquidado a pagar contabilizado
+ [x] Credito liquidado pago contabilizado
+ [x] Empenhos a liquidar contabilizado
+ [x] Empenho liquidado a pagar contabilizado
+ [x] Empenhos pagos contabilizado
+ [x] Fechamento dos lancamentos nas contas orcamentarias
+ [x] Fechamento dos niveis das contas orcamentarias de dotacao orcamentaria
+ [x] Fechamento dos niveis das contas orcamentarias de outros controles da despesa
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar nao processados
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar processados
+ [x] Recursos disponiveis
+ [x] Recursos comprometidos por empenho a liquidar
+ [x] Recursos comprometidos por liquidacao e extras a pagar
+ [x] Valores transferidos por contrato de rateio upa santa rosa
+ [x] Valores transferidos por contrato de rateio samu santa rosa
+ [x] Valores transferidos por contrato de rateio mensalidade cofron
+ [x] Fechamento dos lancamentos nas contas de controle
+ [x] Fechamento dos niveis das contas de controle de contratos de alugueis
+ [x] Fechamento dos niveis das contas de controle de bens do imobilizado cedidos
+ [x] Fechamento dos niveis das contas de controle de plano de amortizacao do deficit atuarial
+ [x] Fechamento dos niveis das contas de controle de ativos contingentes
+ [x] Fechamento dos niveis das contas de controle de obrigacoes conveniadas
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de servicos
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de fornecimento de bens
+ [x] Fechamento dos niveis das contas de controle de outras obrigacoes contratuais
+ [x] Fechamento dos niveis das contas de controle de precatorios incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de precatorios nao incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de disponibilidades
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de demandas judiciais
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de dividas em reconhecimento
+ [x] Fechamento dos niveis das contas de controle de outros passivos contingentes
+ [x] Fechamento dos niveis das contas de controle de valores transferidos por contrato de rateio
+ [x] Fechamento dos niveis das contas de controle de despesas executadas em consorcio
+ [x] Fechamento dos niveis das contas de controle de outras responsabilidades de terceiros
+ [x] Fechamento dos niveis das contas de controle de suprimento de fundos
+ [x] Fechamento dos niveis das contas de controle de pagamentos sem respaldo orcamentario
+ [x] Fechamento dos niveis das contas de controle de responsaveis por danos ao patrimonio
+ [x] Fechamento dos niveis das contas de controle de despesa sem empenho previo
+ [x] Fechamento dos niveis das contas de controle de superavit financeiro disponivel
+ [x] Fechamento dos niveis das contas de controle de limite de suplementacao
+ [x] Saldo final de contribuicao ao rpps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao rgps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao fgts igual ao saldo liquidado a pagar
+ [x] Restos a pagar nao processados inscritos no exercicio
+ [x] Restos a pagar processados inscritos no exercicio
+ [x] Restos a pagar nao processados inscritos
+ [x] Restos a pagar processados inscritos
+ [x] Restos a pagar nao processados inscricao no exercicio igual a zero
+ [x] Restos a pagar processados inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar processados inscricao no exercicio igual liquidado nao pago
+ [x] Restos a pagar nao processados a liquidar
+ [x] Restos a pagar nao processados a pagar
+ [x] Restos a pagar nao processados pagos
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar nao processados cancelados
+ [x] Restos a pagar processados a pagar
+ [x] Restos a pagar processados pagos
+ [x] Restos a pagar processados cancelados
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Imobilizado testado manualmente
+ [x] Suprimentos de fundos individualmente testados manualmente
+ [x] Disponibilidades testadas manualmente
+ [x] Saldos invertidos testados manualmente
+ [x] Contas patrimoniais com indicador de superavit financeiro igual x testadas manualmente
+ [x] Fechamento das fontes de recursos testado manualmente
+ [x] Previsao inicial da receita bruta contabilizada
+ [x] Previsao das deducoes da receita para fundeb contabilizada
+ [x] Previsao das outras deducoes da receita contabilizada
+ [x] Reestimativa da receita contabilizada
+ [x] Credito aberto por excesso de arrecadacao
+ [x] Saldo da receita a realizar
+ [x] Receita bruta arrecadada contabilizada
+ [x] Deducao da receita para o fundeb arrecadada contabilizada
+ [x] Deducao da receita por renuncia arrecadada contabilizada
+ [x] Outras deducao da receita arrecadada contabilizada
+ [x] Fechamento dos niveis das contas orcamentarias de receita
+ [x] Receita intra orcamentaria igual a despesa intra orcamentaria
+ [x] Parcelamento da divida previdenciaria no curto prazo
+ [x] Parcelamento da divida previdenciaria no longo prazo
+ [x] Duodecimo a receber e a pagar
+ [x] Fechamento das contas de ativo e passivo intra ofss
+ [x] Fechamento das contas de resultado intra ofss
+ [x] Contribuicao patronal normal a receber
+ [x] Contribuicao patronal suplementar a receber
+ [x] Contribuicao do servidor a receber
+ [x] Contribuicao patronal normal em contas de resultado
+ [x] Contribuicao patronal suplementar em contas de resultado
+ [x] Atualizacao do saldo da divida previdenciaria em contas de resultado
+ [x] Duodecimo em contas de resultado
+ [x] Contrapartida do duodecimo a receber a transferir em contas de resultado
+ [x] Contrapartida da inscricao do duodecimo a receber a transferir em contas de resultado
+
+Prefeitura (IDDRS\ConTest\Tests\Prefeitura)
+ [x] Saldo final de adiantamentos de salario igual a zero
+ [x] Saldo final de adiantamentos de ferias igual a zero
+ [x] Saldo final de outros adiantamentos igual a zero
+ [x] Saldo final de suprimentos de fundos do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de parcerias a apropriar do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de salarios a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de ferias a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de pasep a pagar igual ao saldo liquidado a pagar
+ [x] Saldo de recursos extra orcamentarios igual ao saldo do passivo a recolher menos o ativo a compensar deduzidos dos sequestros
+ [x] Fechamento dos lancamentos nas contas patrimoniais
+ [x] Credito inicial contabilizado
+ [x] Credito suplementar contabilizado
+ [x] Credito especial contabilizado
+ [x] Credito extraordinario contabilizado
+ [x] Credito reaberto contabilizado
+ [x] Anulacao de dotacao contabilizada
+ [x] Cancelamento de dotacao contabilizada
+ [x] Emissao de notas de empenhos contabilizada
+ [x] Dotacao disponivel contabilizada
+ [x] Credito empenhado a liquidar contabilizado
+ [x] Credito liquidado a pagar contabilizado
+ [x] Credito liquidado pago contabilizado
+ [x] Empenhos a liquidar contabilizado
+ [x] Empenho liquidado a pagar contabilizado
+ [x] Empenhos pagos contabilizado
+ [x] Fechamento dos lancamentos nas contas orcamentarias
+ [x] Fechamento dos niveis das contas orcamentarias de dotacao orcamentaria
+ [x] Fechamento dos niveis das contas orcamentarias de outros controles da despesa
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar nao processados
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar processados
+ [x] Recursos disponiveis
+ [x] Recursos comprometidos por empenho a liquidar
+ [x] Recursos comprometidos por liquidacao e extras a pagar
+ [x] Valores transferidos por contrato de rateio upa santa rosa
+ [x] Valores transferidos por contrato de rateio samu santa rosa
+ [x] Valores transferidos por contrato de rateio mensalidade cofron
+ [x] Fechamento dos lancamentos nas contas de controle
+ [x] Fechamento dos niveis das contas de controle de contratos de alugueis
+ [x] Fechamento dos niveis das contas de controle de bens do imobilizado cedidos
+ [x] Fechamento dos niveis das contas de controle de plano de amortizacao do deficit atuarial
+ [x] Fechamento dos niveis das contas de controle de ativos contingentes
+ [x] Fechamento dos niveis das contas de controle de obrigacoes conveniadas
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de servicos
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de fornecimento de bens
+ [x] Fechamento dos niveis das contas de controle de outras obrigacoes contratuais
+ [x] Fechamento dos niveis das contas de controle de precatorios incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de precatorios nao incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de disponibilidades
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de demandas judiciais
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de dividas em reconhecimento
+ [x] Fechamento dos niveis das contas de controle de outros passivos contingentes
+ [x] Fechamento dos niveis das contas de controle de valores transferidos por contrato de rateio
+ [x] Fechamento dos niveis das contas de controle de despesas executadas em consorcio
+ [x] Fechamento dos niveis das contas de controle de outras responsabilidades de terceiros
+ [x] Fechamento dos niveis das contas de controle de suprimento de fundos
+ [x] Fechamento dos niveis das contas de controle de pagamentos sem respaldo orcamentario
+ [x] Fechamento dos niveis das contas de controle de responsaveis por danos ao patrimonio
+ [x] Fechamento dos niveis das contas de controle de despesa sem empenho previo
+ [x] Fechamento dos niveis das contas de controle de superavit financeiro disponivel
+ [x] Fechamento dos niveis das contas de controle de limite de suplementacao
+ [x] Saldo final de contribuicao ao rpps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao rgps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao fgts igual ao saldo liquidado a pagar
+ [x] Restos a pagar nao processados inscritos no exercicio
+ [x] Restos a pagar processados inscritos no exercicio
+ [x] Restos a pagar nao processados inscritos
+ [x] Restos a pagar processados inscritos
+ [x] Restos a pagar nao processados inscricao no exercicio igual a zero
+ [x] Restos a pagar processados inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar processados inscricao no exercicio igual liquidado nao pago
+ [x] Restos a pagar nao processados a liquidar
+ [x] Restos a pagar nao processados a pagar
+ [x] Restos a pagar nao processados pagos
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar nao processados cancelados
+ [x] Restos a pagar processados a pagar
+ [x] Restos a pagar processados pagos
+ [x] Restos a pagar processados cancelados
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Imobilizado testado manualmente
+ [x] Suprimentos de fundos individualmente testados manualmente
+ [x] Disponibilidades testadas manualmente
+ [x] Saldos invertidos testados manualmente
+ [x] Contas patrimoniais com indicador de superavit financeiro igual x testadas manualmente
+ [x] Fechamento das fontes de recursos testado manualmente
+ [x] Previsao inicial da receita bruta contabilizada
+ [x] Previsao das deducoes da receita para fundeb contabilizada
+ [x] Previsao das outras deducoes da receita contabilizada
+ [x] Reestimativa da receita contabilizada
+ [x] Credito aberto por excesso de arrecadacao
+ [x] Saldo da receita a realizar
+ [x] Receita bruta arrecadada contabilizada
+ [x] Deducao da receita para o fundeb arrecadada contabilizada
+ [x] Deducao da receita por renuncia arrecadada contabilizada
+ [x] Outras deducao da receita arrecadada contabilizada
+ [x] Fechamento dos niveis das contas orcamentarias de receita
+ [x] Saldo final do fpm a receber igual a zero
+ [x] Saldo final do fundeb a reter igual a zero
+ [x] Saldo final de precatorios a pagar no curto prazo igual aos controles de precatorios incluidos em loa
+ [x] Saldo final de precatorios a pagar no longo prazo igual aos controles de precatorios nao incluidos em loa
+ [x] Credito aberto por superavit financeiro
+ [x] Divida ativa testada manualmente
+ [x] Termos de fomento individualmente testados manualmente
+
+RPPS (IDDRS\ConTest\Tests\RPPS)
+ [x] Saldo final de adiantamentos de salario igual a zero
+ [x] Saldo final de adiantamentos de ferias igual a zero
+ [x] Saldo final de outros adiantamentos igual a zero
+ [x] Saldo final de suprimentos de fundos do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de parcerias a apropriar do ativo igual aos controles a comprovar e a aprovar
+ [x] Saldo final de salarios a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de ferias a pagar igual ao saldo liquidado a pagar
+ [x] Saldo final de pasep a pagar igual ao saldo liquidado a pagar
+ [x] Saldo de recursos extra orcamentarios igual ao saldo do passivo a recolher menos o ativo a compensar deduzidos dos sequestros
+ [x] Fechamento dos lancamentos nas contas patrimoniais
+ [x] Credito inicial contabilizado
+ [x] Credito suplementar contabilizado
+ [x] Credito especial contabilizado
+ [x] Credito extraordinario contabilizado
+ [x] Credito reaberto contabilizado
+ [x] Anulacao de dotacao contabilizada
+ [x] Cancelamento de dotacao contabilizada
+ [x] Emissao de notas de empenhos contabilizada
+ [x] Dotacao disponivel contabilizada
+ [x] Credito empenhado a liquidar contabilizado
+ [x] Credito liquidado a pagar contabilizado
+ [x] Credito liquidado pago contabilizado
+ [x] Empenhos a liquidar contabilizado
+ [x] Empenho liquidado a pagar contabilizado
+ [x] Empenhos pagos contabilizado
+ [x] Fechamento dos lancamentos nas contas orcamentarias
+ [x] Fechamento dos niveis das contas orcamentarias de dotacao orcamentaria
+ [x] Fechamento dos niveis das contas orcamentarias de outros controles da despesa
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar nao processados
+ [x] Fechamento dos niveis das contas orcamentarias de restos a pagar processados
+ [x] Recursos disponiveis
+ [x] Recursos comprometidos por empenho a liquidar
+ [x] Recursos comprometidos por liquidacao e extras a pagar
+ [x] Valores transferidos por contrato de rateio upa santa rosa
+ [x] Valores transferidos por contrato de rateio samu santa rosa
+ [x] Valores transferidos por contrato de rateio mensalidade cofron
+ [x] Fechamento dos lancamentos nas contas de controle
+ [x] Fechamento dos niveis das contas de controle de contratos de alugueis
+ [x] Fechamento dos niveis das contas de controle de bens do imobilizado cedidos
+ [x] Fechamento dos niveis das contas de controle de plano de amortizacao do deficit atuarial
+ [x] Fechamento dos niveis das contas de controle de ativos contingentes
+ [x] Fechamento dos niveis das contas de controle de obrigacoes conveniadas
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de servicos
+ [x] Fechamento dos niveis das contas de controle de obrigacoes de contratos de fornecimento de bens
+ [x] Fechamento dos niveis das contas de controle de outras obrigacoes contratuais
+ [x] Fechamento dos niveis das contas de controle de precatorios incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de precatorios nao incluidos no orcamento
+ [x] Fechamento dos niveis das contas de controle de disponibilidades
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de demandas judiciais
+ [x] Fechamento dos niveis das contas de controle de passivos contingentes de dividas em reconhecimento
+ [x] Fechamento dos niveis das contas de controle de outros passivos contingentes
+ [x] Fechamento dos niveis das contas de controle de valores transferidos por contrato de rateio
+ [x] Fechamento dos niveis das contas de controle de despesas executadas em consorcio
+ [x] Fechamento dos niveis das contas de controle de outras responsabilidades de terceiros
+ [x] Fechamento dos niveis das contas de controle de suprimento de fundos
+ [x] Fechamento dos niveis das contas de controle de pagamentos sem respaldo orcamentario
+ [x] Fechamento dos niveis das contas de controle de responsaveis por danos ao patrimonio
+ [x] Fechamento dos niveis das contas de controle de despesa sem empenho previo
+ [x] Fechamento dos niveis das contas de controle de superavit financeiro disponivel
+ [x] Fechamento dos niveis das contas de controle de limite de suplementacao
+ [x] Saldo final de contribuicao ao rpps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao rgps igual ao saldo liquidado a pagar
+ [x] Saldo final de contribuicao ao fgts igual ao saldo liquidado a pagar
+ [x] Restos a pagar nao processados inscritos no exercicio
+ [x] Restos a pagar processados inscritos no exercicio
+ [x] Restos a pagar nao processados inscritos
+ [x] Restos a pagar processados inscritos
+ [x] Restos a pagar nao processados inscricao no exercicio igual a zero
+ [x] Restos a pagar processados inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar processados inscricao no exercicio igual liquidado nao pago
+ [x] Restos a pagar nao processados a liquidar
+ [x] Restos a pagar nao processados a pagar
+ [x] Restos a pagar nao processados pagos
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar nao processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Restos a pagar nao processados cancelados
+ [x] Restos a pagar processados a pagar
+ [x] Restos a pagar processados pagos
+ [x] Restos a pagar processados cancelados
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual a zero
+ [x] Restos a pagar processados a liquidar inscricao no exercicio igual empenhado nao liquidado
+ [x] Imobilizado testado manualmente
+ [x] Suprimentos de fundos individualmente testados manualmente
+ [x] Disponibilidades testadas manualmente
+ [x] Saldos invertidos testados manualmente
+ [x] Contas patrimoniais com indicador de superavit financeiro igual x testadas manualmente
+ [x] Fechamento das fontes de recursos testado manualmente
+ [x] Previsao inicial da receita bruta contabilizada
+ [x] Previsao das deducoes da receita para fundeb contabilizada
+ [x] Previsao das outras deducoes da receita contabilizada
+ [x] Reestimativa da receita contabilizada
+ [x] Credito aberto por excesso de arrecadacao
+ [x] Saldo da receita a realizar
+ [x] Receita bruta arrecadada contabilizada
+ [x] Deducao da receita para o fundeb arrecadada contabilizada
+ [x] Deducao da receita por renuncia arrecadada contabilizada
+ [x] Outras deducao da receita arrecadada contabilizada
+ [x] Fechamento dos niveis das contas orcamentarias de receita
+

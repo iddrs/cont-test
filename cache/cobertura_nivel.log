@@ -18,6 +18,8 @@
 8.1.2.2.1.01;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesConveniadas
 7.1.2.3.1.02;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos
 8.1.2.3.1.02;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeServicos
+7.1.2.3.1.01;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeSeguros
+8.1.2.3.1.01;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeSeguros
 7.1.2.3.1.04;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeFornecimentoDeBens
 8.1.2.3.1.04;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeFornecimentoDeBens
 7.1.2.3.1.99;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeOutrasObrigacoesContratuais
@@ -25,7 +27,7 @@
 7.1.2.9.1.01;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosIncluidosNoOrcamento
 8.1.2.9.1.01;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosIncluidosNoOrcamento
 7.1.2.9.1.02;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosNaoIncluidosNoOrcamento
-8.1.2.29.1.02;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosNaoIncluidosNoOrcamento
+8.1.2.9.1.02;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDePrecatoriosNaoIncluidosNoOrcamento
 7.2.1.1;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades
 8.2.1.1;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDeDisponibilidades
 7.4.1.1.1;201;1199;nivel;testFechamentoDosNiveisDasContasDeControleDePassivosContingentesDeDemandasJudiciais
