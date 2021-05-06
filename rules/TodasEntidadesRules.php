@@ -472,7 +472,7 @@ trait TodasEntidadesRules {
     public function testAnulacaoDeDotacaoContabilizada() {
         $filter = function (array $line): bool {
             if (
-                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.03') && $line['escrituracao'] === 'S'
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.9.04') && $line['escrituracao'] === 'S'
             ) {
                 return true;
             }
@@ -486,9 +486,9 @@ trait TodasEntidadesRules {
         };
         $balDesp = $this->somaColuna($this->getDataFrame('BAL_DESP'), 'reducao_dotacao', $filter);
 
-        $this->comparar(($saldoDevedor - $saldoCredor), $balDesp);
+        $this->comparar(($saldoCredor - $saldoDevedor), $balDesp);
         
-        $this->saldoVerificado(__METHOD__, '5.2.2.1.3.03');
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.9.04');
     }
     
     

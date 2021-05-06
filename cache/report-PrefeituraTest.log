@@ -91,7 +91,6 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 5.2.2.1.2.02.02;201;1199;saldo;testCreditoReabertoContabilizado
 5.2.2.1.2.03.02;201;1199;saldo;testCreditoReabertoContabilizado
 5.2.2.1.3.06;201;1199;saldo;testCreditoReabertoContabilizado
-5.2.2.1.3.03;201;1199;saldo;testAnulacaoDeDotacaoContabilizada
 5.2.2.1.9.04;201;1199;saldo;testCancelamentoDeDotacaoContabilizada
 5.2.2.9.2.01;201;1199;saldo;testEmissaoDeNotasDeEmpenhosContabilizada
 6.2.2.1.1;201;1199;saldo;testDotacaoDisponivelContabilizada
