@@ -492,6 +492,10 @@ trait TodasEntidadesRules {
 
         $this->saldoVerificado(__METHOD__, '5.2.2.1.9.04');
     }
+    
+    public function testCreditoAdicionalAbertoPorReducao() {
+        $this->mark->markTestIncomplete('5.2.2.1.3.03');
+    }
 
     /**
      * Anulação de dotação
