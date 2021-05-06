@@ -225,8 +225,7 @@ trait TodasEntidadesRules {
     /**
      * Testa os saldos de ativo/passivo extra com o saldo de recursos extra
      */
-    public function testSaldoDeRecursosExtraOrcamentariosIgualAoSaldoDoPassivoARecolherMenosOAtivoACompensar() {
-//        $this->markTestSkipped("Pulado porque a diferença é referente à conta 1.1.3.5.1.05.01");
+    public function testSaldoDeRecursosExtraOrcamentariosIgualAoSaldoDoPassivoARecolherMenosOAtivoACompensarDeduzidosDosSequestros() {
         $filter = function (array $line): bool {
             if (
                     str_starts_with($line['conta_contabil'], '1.1.1.1.1.') && $line['escrituracao'] === 'S' && $line['recurso_vinculado'] >= 8000 && $line['recurso_vinculado'] <= 8999
@@ -250,6 +249,15 @@ trait TodasEntidadesRules {
         };
         $saldoDevedorAtivo = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredorAtivo = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '1.1.3.5.1.05.')) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedorAtivoSequestro = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredorAtivoSequestro = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
         $filter = function (array $line): bool {
             if (
@@ -262,7 +270,7 @@ trait TodasEntidadesRules {
         $saldoDevedorPassivo = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
         $saldoCredorPassivo = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
 
-        $this->comparar(($saldoDevedorDisp - $saldoCredorDisp), ($saldoCredorPassivo - $saldoDevedorPassivo) - ($saldoDevedorAtivo - $saldoCredorAtivo));
+        $this->comparar(($saldoDevedorDisp - $saldoCredorDisp), ($saldoCredorPassivo - $saldoDevedorPassivo) - ($saldoDevedorAtivo - $saldoCredorAtivo) - ($saldoDevedorAtivoSequestro - $saldoCredorAtivoSequestro));
         
     }
 
