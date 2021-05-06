@@ -226,7 +226,7 @@ trait TodasEntidadesRules {
      * Testa os saldos de ativo/passivo extra com o saldo de recursos extra
      */
     public function testSaldoDeRecursosExtraOrcamentariosIgualAoSaldoDoPassivoARecolherMenosOAtivoACompensar() {
-        $this->markTestSkipped("Pulado porque a diferença é referente à conta 1.1.3.5.1.05.01");
+//        $this->markTestSkipped("Pulado porque a diferença é referente à conta 1.1.3.5.1.05.01");
         $filter = function (array $line): bool {
             if (
                     str_starts_with($line['conta_contabil'], '1.1.1.1.1.') && $line['escrituracao'] === 'S' && $line['recurso_vinculado'] >= 8000 && $line['recurso_vinculado'] <= 8999

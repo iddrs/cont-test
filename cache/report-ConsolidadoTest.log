@@ -85,6 +85,7 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 5.2.2.1.2.02.02;0;9999;saldo;testCreditoReabertoContabilizado
 5.2.2.1.2.03.02;0;9999;saldo;testCreditoReabertoContabilizado
 5.2.2.1.3.06;0;9999;saldo;testCreditoReabertoContabilizado
+5.2.2.1.9.04;0;9999;saldo;testAnulacaoDeDotacaoContabilizada
 5.2.2.1.9.04;0;9999;saldo;testCancelamentoDeDotacaoContabilizada
 5.2.2.9.2.01;0;9999;saldo;testEmissaoDeNotasDeEmpenhosContabilizada
 6.2.2.1.1;0;9999;saldo;testDotacaoDisponivelContabilizada
@@ -127,6 +128,7 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 5.2.1.1.2.01.01;0;9999;saldo;testPrevisaoDasDeducoesDaReceitaParaFundebContabilizada
 5.2.1.1.2.99;0;9999;saldo;testPrevisaoDasOutrasDeducoesDaReceitaContabilizada
 5.2.1.2.1.01;0;9999;saldo;testReestimativaDaReceitaContabilizada
+5.2.2.1.3.02;0;9999;saldo;testCreditoAbertoPorExcessoDeArrecadacao
 6.2.1.1;0;9999;saldo;testSaldoDaReceitaARealizar
 6.2.1.2;0;9999;saldo;testReceitaBrutaArrecadadaContabilizada
 6.2.1.3.1.01;0;9999;saldo;testDeducaoDaReceitaParaOFundebArrecadadaContabilizada

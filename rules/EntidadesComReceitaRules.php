@@ -128,7 +128,7 @@ trait EntidadesComReceitaRules {
      * Crédito aberto por excesso de arrecadação
      */
     public function testCreditoAbertoPorExcessoDeArrecadacao() {
-        $this->markTestSkipped("Pulado porque a diferença é referente a atualizaçaõ de receita não feita na data. Corrigida em abril.");
+//        $this->markTestSkipped("Pulado porque a diferença é referente a atualizaçaõ de receita não feita na data. Corrigida em abril.");
         $filter = function (array $line): bool {
             if (str_starts_with($line['conta_contabil'], '5.2.2.1.3.02') && $line['escrituracao'] === 'S') {
                 return true;
