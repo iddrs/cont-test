@@ -1383,6 +1383,34 @@ trait TodasEntidadesRules {
     }
     
     /**
+     * Fechamento 7.1.2.3.1.01/8.1.2.3.1.01
+     */
+    public function testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeSeguros() {
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '7.1.2.3.1.01') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor7 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor7 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '8.1.2.3.1.01') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor8 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor8 = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
+        
+        $this->comparar(($saldoDevedor7 - $saldoCredor7), ($saldoCredor8 - $saldoDevedor8));
+        
+        $this->nivelVerificado(__METHOD__, '7.1.2.3.1.01', '8.1.2.3.1.01');
+    }
+    
+    /**
      * Fechamento 7.1.2.3.1.04/8.1.2.3.1.04
      */
     public function testFechamentoDosNiveisDasContasDeControleDeObrigacoesDeContratosDeFornecimentoDeBens() {
