@@ -2427,7 +2427,26 @@ trait TodasEntidadesRules {
     }
     
     public function testPassivoDeRestosAPagar() {
-        $this->markTestIncomplete('2.1.3.1.1.01.01.02');
+//        $this->markTestIncomplete('2.1.3.1.1.01.01.02');
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '2.1.3.1.1.01.01.02') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        $passivo = $saldoCredor - $saldoDevedor;
+
+        $filter = function (array $line): bool {
+            return true;
+        };
+        $saldoRP = $this->somaColuna($this->getDataFrame('RESTOS_PAGAR'), 'saldo_final_processados', $filter);
+
+        $this->comparar($passivo, $saldoRP);
+
+        $this->saldoVerificado(__METHOD__, '2.1.3.1.1.01.01.02');
     }
 
     public function testContasPatrimoniaisComIndicadorDeSuperavitFinanceiroIgualXTestadasManualmente() {
