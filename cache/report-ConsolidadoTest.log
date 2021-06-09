@@ -4,6 +4,7 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 8.9.1.2.1;0;9999;externo;testSuprimentosDeFundosIndividualmenteTestadosManualmente
 1.1.1;0;9999;externo;testDisponibilidadesTestadasManualmente
 1.1.4;0;9999;externo;testDisponibilidadesTestadasManualmente
+1.1.3.2.3.06.03;0;9999;externo;testSalarioFamiliaACompensarTestadoManualmente
 1.;0;9999;natureza;testFechamentoDosLancamentosNasContasPatrimoniais
 2.;0;9999;natureza;testFechamentoDosLancamentosNasContasPatrimoniais
 3.;0;9999;natureza;testFechamentoDosLancamentosNasContasPatrimoniais
@@ -88,6 +89,7 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 5.2.2.1.2.03.02;0;9999;saldo;testCreditoReabertoContabilizado
 5.2.2.1.3.06;0;9999;saldo;testCreditoReabertoContabilizado
 5.2.2.1.9.04;0;9999;saldo;testAnulacaoDeDotacaoContabilizada
+5.2.2.1.3.03;0;9999;saldo;testCreditoAdicionalAbertoPorReducao
 5.2.2.1.9.04;0;9999;saldo;testCancelamentoDeDotacaoContabilizada
 5.2.2.9.2.01;0;9999;saldo;testEmissaoDeNotasDeEmpenhosContabilizada
 6.2.2.1.1;0;9999;saldo;testDotacaoDisponivelContabilizada

@@ -494,7 +494,71 @@ trait TodasEntidadesRules {
     }
     
     public function testCreditoAdicionalAbertoPorReducao() {
-        $this->mark->markTestIncomplete('5.2.2.1.3.03');
+//        $this->markTestIncomplete('5.2.2.1.3.03');
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.03') && $line['escrituracao'] === 'S'
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        $anulacao = $saldoDevedor - $saldoCredor;
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.99') && $line['escrituracao'] === 'S'
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        $valor_global = $saldoCredor - $saldoDevedor;
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.06') && $line['escrituracao'] === 'S'
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        $dotacao_transferida = $saldoDevedor - $saldoCredor;
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.02') && $line['escrituracao'] === 'S'
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        $excesso = $saldoDevedor - $saldoCredor;
+        
+        $filter = function (array $line): bool {
+            if (
+                    str_starts_with($line['conta_contabil'], '5.2.2.1.3.01') && $line['escrituracao'] === 'S'
+            ) {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        $superavit = $saldoDevedor - $saldoCredor;
+
+        $this->comparar($anulacao, $valor_global - $dotacao_transferida - $excesso - $superavit);
+
+        $this->saldoVerificado(__METHOD__, '5.2.2.1.3.03');
     }
 
     /**
