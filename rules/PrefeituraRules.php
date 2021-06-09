@@ -144,4 +144,20 @@ trait PrefeituraRules {
         $this->assertTrue(true);
         $this->conferenciaExterna(__METHOD__, '1.1.9.8.1.01', '8.1.2.2');
     }
+    
+    public function testRendimentosFinanceirosDoLegislativoIgualAZero() {
+//        $this->markTestIncomplete('1.1.9.2.1.01');
+        $filter = function (array $line): bool {
+            if (str_starts_with($line['conta_contabil'], '1.1.9.2.1.01') && $line['escrituracao'] === 'S') {
+                return true;
+            }
+            return false;
+        };
+        $saldoDevedor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_debito', $filter);
+        $saldoCredor = $this->somaColuna($this->getDataFrame('BAL_VER'), 'saldo_atual_credito', $filter);
+        
+        $this->comparar(0.0, ($saldoCredor - $saldoDevedor));
+        
+        $this->saldoVerificado(__METHOD__, '1.1.9.2.1.01');
+    }
 }

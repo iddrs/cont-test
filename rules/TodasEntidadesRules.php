@@ -2426,10 +2426,6 @@ trait TodasEntidadesRules {
         $this->assertTrue(true);
     }
     
-    public function testRendimentosFinanceirosDoLegislativoTestadosManualmente() {
-        $this->markTestIncomplete('1.1.9.2.1.01');
-    }
-    
     public function testPassivoDeRestosAPagar() {
         $this->markTestIncomplete('2.1.3.1.1.01.01.02');
     }

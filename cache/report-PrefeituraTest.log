@@ -154,3 +154,4 @@ conta_contabil;uniorcam_inicial;uniorcam_final;conferencia;regra
 2.2.1.1.1.04;201;1199;saldo;testSaldoFinalDePrecatoriosAPagarNoLongoPrazoIgualAosControlesDePrecatoriosNaoIncluidosEmLoa
 8.1.2.9.1.02;201;1199;saldo;testSaldoFinalDePrecatoriosAPagarNoLongoPrazoIgualAosControlesDePrecatoriosNaoIncluidosEmLoa
 5.2.2.1.3.01;201;1199;saldo;testCreditoAbertoPorSuperavitFinanceiro
+1.1.9.2.1.01;201;1199;saldo;testRendimentosFinanceirosDoLegislativoIgualAZero
